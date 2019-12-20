@@ -10,59 +10,62 @@
   <body>
     <header class="main-header">
       <div class="fixed-container">
-        <div class=" flex-contaier">
-          <div class="main-header__logo logo">Supergym</div>
-          <div class="main-header__phone">
-            <a href="tel:+78005555555">8-800-555-55-55</a>
+        <div class="flex-container flex-container__header">
+          <div class="logo logo__header">Supergym</div>
+          <div class="phone">
+            <a href="tel:+78005555555" class="phone__link">8-800-555-55-55</a>
           </div>
-          <div class="main-header__left-block">
+        </div>
+        <div class="flex-container main-inform">
+          <div class="main-inform__content">
             <span>Омск</span>
-            <h1>Фитнес центр</h1>
-            <ul>
-              <li>Тренажёрный зал</li>
-              <li>Групповые занятия</li>
-              <li>Кардио-зона</li>
+            <h1 class="main-inform__heading">Фитнец центр </h1>
+            <ul class="main-inform__list">
+              <li class="main-inform__item">Тренажёрный зал</li>
+              <li class="main-inform__item">Групповые занятия</li>
+              <li class="main-inform__item">Кардио-зона</li>
             </ul>
-            <button class="main-header__button">Купить абонемент</button>
+            <button class="main-inform__button button__white-border">
+              Купить абонемент
+            </button>
           </div>
-          <div class="main-header__photo-block">
-            <img src="./img/Rectangle.jpg" alt="Фитнес центр" />
+          <div>
+            <img src="./img/Rectangle.jpg" alt="Тренер" class="main-inform__photo">
           </div>
-          <div class="main-header__socials-links">
-            <ul>
-              <li>Fb</li>
-              <li>Vk</li>
-              <li>Ig</li>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">Fb</li>
+              <li class="socials__item">Vk</li>
+              <li class="socials__item">Ig</li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section class="section-gym" id="gym">
-        <div class="wrap-white fixed-container flex-container">
-          <div class="section-gym__text">
-            <h2>Тренажерный зал</h2>
-            <p><span>Просторный зал площадью 900 кв/м</span></p>
-            <p>
+    <!-- <main>
+      <section class="gym" id="gym">
+        <div class="fixed-container flex-container">
+          <div class="gym-info">
+            <h2 class="heading heading__left">Тренажерный зал</h2>
+            <p><span class="gym-info__desc gym-info__desc__bold">Просторный зал площадью 900 кв/м</span></p>
+            <p class="gym-info__desc">
               Supergym – самый большой фитнес центр за Уралом и идеальное место
               для укрепления тела и здоровья. Тренажерный зал оснащен всем
               необходимым современным оборудованием для всех спортсменов.
             </p>
-            <p>
+            <p class="gym-info__desc">
               В зале расположены отдельная зона для Crossfit и кардио-зона с 40
               тренажерами. Также в фитнес центре есть несколько оборудованных
               залов для различных видов групповых занятий.
             </p>
           </div>
-          <div class="section-gym__photo"><img src="./img/Gym.jpg" alt="Тренажерный зал"></div>
-          <!-- Как я понял ниже должно быть видео, но я его не нашел, поэтому вставил фото -->
-          <div class="setcion-gym__video"><img src="./img/gym2.jpg" alt="Видео про зал"></div>
+          <div class="gym__photo photo"><img src="./img/Gym.jpg" alt="Тренажерный зал"></div>
+          <div class="gym__video video"><img src="./img/gym2.jpg" alt="Видео про зал"></div>
         </div>
       </section>
-      <section class="section-subscription" id="subscription">
-        <div class="fixed-contaier wrap-grey">
-          <h2>Абонементы</h2>
+      <section class="subscription" id="subscription">
+        <div class="fixed-container wrap-grey">
+          <h2 class="heading">Абонементы</h2>
           <ul class="section-subscription__months-list">
             <li class="section-subscription__months-list__item">1 месяц</li>
             <li class="section-subscription__months-list__item">6 месяцев</li>
@@ -113,7 +116,7 @@
           </div>
         </div>
       </aside>
-      <section class="section-coaches" id="coaches">
+      <section class="coaches" id="coaches">
         <div class="fixed-container wrap-white">
           <h2 class="section-coaches__heading">Тренеры</h2>
           <ul class="section-coaches__list">
@@ -241,7 +244,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-benefits">
+      <section class="benefits">
         <div class="fixed-container wrap-grey">
           <h2 class="section-benefits__heading">Наши преимущества</h2>
           <ul class="section-benefits__list flex-container">
@@ -289,8 +292,8 @@
           </ul>
         </div>
       </section>
-      <section class="section-promo" id="promo">
-        <div class="fixed-contaier wrap-white">
+      <section class="promo" id="promo">
+        <div class="fixed-container wrap-white">
           <ul class="section-promo__list flex-contaier">
             <li class="section-promo__item">
             <div class="section-promo--item red-wrap">
@@ -319,7 +322,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-comments">
+      <section class="comments">
         <div class="fixed-container wrap-white">
           <h2 class="section-comments__heading">Отзывы</h2>
           <ul class="section-comments__list">
@@ -340,7 +343,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-form">
+      <section class="form">
         <div class="fixed-container dark-wrap">
         <h2 class="section-form__heading">Бесплатное занятие</h2>
         <form action="mailto:omsk@supergym.ru">
@@ -350,7 +353,7 @@
         </form>
       </div>
       </section>
-      <section class="section-contacts">
+      <section class="contacts">
         <div class="fixed-container wrap-white">
           <h2 class="section-contacts__heading">Контакты</h2>
           <div class="section-contacts__left-container">
@@ -379,7 +382,6 @@
             <li class="nav-item"><a href="#subscription">Абонементы</a></li>
             <li class="nav-item"><a href="#promo">Акции</a></li>
             <li class="nav-item"><a href="#coaches">Тренеры</a></li>
-            <!-- Нижняя ссылка ведет на страницу с расписание -->
             <li class="nav-item"><a href="#">Расписание</a></li>   
           </ul>
         </nav>
@@ -389,6 +391,6 @@
           <a href="facebook.com"><img src="./img/fb.png" alt="Facebook"></a>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

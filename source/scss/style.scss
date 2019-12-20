@@ -1,1 +1,106 @@
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bebas Neue"), local("Bebas-Neue"),
+    url("../fonts/Bebas_Neue/BebasNeue-Regular.woff") format("woff");
+}
 
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Bebas Neue"), local("Bebas-Neue"),
+    url("../fonts/Bebas_Neue/BebasNeue-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto Condensed"), local("Roboto-Condensed"),
+    url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Condensed"), local("Roboto-Condensed"),
+    url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Roboto Condensed"), local("Roboto-Condensed"),
+    url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fixed-container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container__header {
+  padding-top: 30px;
+}
+
+.main-header {
+  background-image: url(../img/gradient.jpg);
+  //Потом убрать высоту
+  height: 658px;
+}
+
+.logo,
+.phone__link {
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.main-inform__content {
+  text-align: end;
+  max-width: 460px;
+
+  span {
+    font-family: "Bebas Neue";
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}
+
+.main-inform__heading {
+  font-family: "Bebas Neue";
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  word-wrap: break-word;
+}
