@@ -1,0 +1,12 @@
+.gym-text__desc {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #102654;
+
+  &:last-child {
+    padding-top: 8px;
+  }
+}

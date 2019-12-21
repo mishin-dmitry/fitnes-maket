@@ -10,60 +10,80 @@
   <body>
     <header class="main-header">
       <div class="fixed-container">
-        <div class="flex-container flex-container__header">
-          <div class="logo logo__header">Supergym</div>
-          <div class="phone">
-            <a href="tel:+78005555555" class="phone__link">8-800-555-55-55</a>
+        <div class="flex-container">
+          <div class="logo main-header__logo">Supergym</div>
+          <div>
+            <a href="tel:+78005555555" class="main-header__phone page-link"
+              >8-800-555-55-55</a
+            >
           </div>
         </div>
-        <div class="flex-container main-inform">
-          <div class="main-inform__content">
-            <span>Омск</span>
-            <h1 class="main-inform__heading">Фитнец центр </h1>
-            <ul class="main-inform__list">
-              <li class="main-inform__item">Тренажёрный зал</li>
-              <li class="main-inform__item">Групповые занятия</li>
-              <li class="main-inform__item">Кардио-зона</li>
+        <div class="flex-container flex-container__nowrap">
+          <div class="text-content">
+            <h1 class="text-content__heading">
+              <span class="text-content__heading_small-text">Омск</span>Фитнеc
+              центр
+            </h1>
+            <ul class="text-content__list page-list">
+              <li class="text-content__item page-item">Тренажёрный зал</li>
+              <li class="text-content__item page-item">Групповые занятия</li>
+              <li class="text-content__item page-item">Кардио-зона</li>
             </ul>
-            <button class="main-inform__button button__white-border">
+            <button class="text-content__button button__white-border">
               Купить абонемент
             </button>
           </div>
           <div>
-            <img src="./img/Rectangle.jpg" alt="Тренер" class="main-inform__photo">
+            <img
+              src="./img/Rectangle.jpg"
+              alt="Тренер"
+              class="main-header__photo"
+            />
           </div>
           <div class="socials">
-            <ul class="socials__list">
-              <li class="socials__item">Fb</li>
-              <li class="socials__item">Vk</li>
-              <li class="socials__item">Ig</li>
+            <ul class="socials__list header__list page-list">
+              <li class="socials__item ">
+                <a href="#" class="socials__link page-link">Fb</a>
+              </li>
+              <li class="socials__item ">
+                <a href="#" class="socials__link page-link ">Vk</a>
+              </li>
+              <li class="socials__item ">
+                <a href="#" class="socials__link page-link ">Ig</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <!-- <main>
+    <main>
       <section class="gym" id="gym">
-        <div class="fixed-container flex-container">
-          <div class="gym-info">
-            <h2 class="heading heading__left">Тренажерный зал</h2>
-            <p><span class="gym-info__desc gym-info__desc__bold">Просторный зал площадью 900 кв/м</span></p>
-            <p class="gym-info__desc">
+        <div class="fixed-container flex-container gym__content">
+          <div class="gym-text">
+            <h2 class="heading gym-text__heading">Тренажерный зал</h2>
+            <p class="gym-text__desc gym-text__desc_bold page-desc">
+              Просторный зал площадью 900 кв/м
+            </p>
+            <p class="gym-text__desc page-desc">
               Supergym – самый большой фитнес центр за Уралом и идеальное место
               для укрепления тела и здоровья. Тренажерный зал оснащен всем
               необходимым современным оборудованием для всех спортсменов.
             </p>
-            <p class="gym-info__desc">
+            <p class="gym-text__desc page-desc">
               В зале расположены отдельная зона для Crossfit и кардио-зона с 40
               тренажерами. Также в фитнес центре есть несколько оборудованных
               залов для различных видов групповых занятий.
             </p>
           </div>
-          <div class="gym__photo photo"><img src="./img/Gym.jpg" alt="Тренажерный зал"></div>
-          <div class="gym__video video"><img src="./img/gym2.jpg" alt="Видео про зал"></div>
+          <div class="gym__photo">
+            <img src="./img/Gym.jpg" alt="Тренажерный зал" />
+          </div>
+          <div class="gym__video">
+            <img src="./img/button-play.png" alt="Просмотр видео" />
+          </div>
         </div>
       </section>
-      <section class="subscription" id="subscription">
+      <!-- <section class="subscription" id="subscription">
         <div class="fixed-container wrap-grey">
           <h2 class="heading">Абонементы</h2>
           <ul class="section-subscription__months-list">
@@ -365,13 +385,13 @@
           <div class="section-contacts__right-container">
             <h4>Телефон:</h4>
             <p><a href="tel:+78805555555">8-800-555-55-55</a></p>
-            <h4>Email:</h4>
-            <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+            <h4>Email:</h4> -->
+      <!-- <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="main-footer">
+    <!-- <footer class="main-footer">
       <div class="fixed-container">
         <div class="main-footer__logo logo">
           Sypergum
@@ -391,6 +411,6 @@
           <a href="facebook.com"><img src="./img/fb.png" alt="Facebook"></a>
         </div>
       </div>
-    </footer> -->
+    </footer>  -->
   </body>
 </html>
