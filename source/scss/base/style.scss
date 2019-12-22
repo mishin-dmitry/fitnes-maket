@@ -4,9 +4,10 @@ body {
 }
 
 .fixed-container {
-  width: 100%;
+  position: relative;
   max-width: 1160px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .flex-container {
@@ -17,6 +18,10 @@ body {
 
 .flex-container__nowrap {
   flex-wrap: nowrap;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .logo {
@@ -32,6 +37,8 @@ body {
 .page-link {
   text-decoration: none;
 }
+
+
 
 .page-list {
   margin: 0;
@@ -72,4 +79,41 @@ body {
 .page-desc {
   padding: 0;
   margin: 0;
+}
+
+.wrap-grey {
+  background-color: #F8F9FC;
+}
+
+.choosen {
+  border-bottom: 2px solid #102654 !important;
+  color: #102654 !important;
+}
+
+.button__dark-border {
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #1C3374;
+  color: #102654;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  outline: 0;
+}
+
+.choosen-type {
+  border: 7px solid !important;
+  border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%) !important;
+  border-image-slice: 1 !important; 
+  transition: 0.5s ;
+}
+
+.choosen-button {
+  color: white !important;
+  background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%) !important;
+  transition: 0.5s;
 }

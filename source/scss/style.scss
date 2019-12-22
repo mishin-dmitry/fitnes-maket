@@ -14,10 +14,21 @@
 @import "./blocks/socials/__list/socials__list.scss";
 @import "./blocks/socials/__item/socials__item.scss";
 @import "./blocks/socials/__link/socials__link.scss";
-@import "./blocks/gym/gym.scss";
 @import "./blocks/gym/gym__content/gym__content.scss";
 @import "./blocks/gym-text/gym-text.scss";
 @import "./blocks/gym-text/__desc/gym-text__desc.scss";
 @import "./blocks/gym-text/__desc/_bold/gym-text__desc_bold.scss";
 @import "./blocks/gym-text/__heading/gym-text__heading.scss";
 @import "./blocks/gym-video/gym-video.scss";
+@import "./blocks/abonements/__heading/abonements__heading.scss";
+@import "./blocks/abonements/__item/abonements__item.scss";
+@import "./blocks/abonements/__list/abonements__list.scss";
+@import "./blocks/abonements/__types-item/abonements__tipes-item.scss";
+@import "./blocks/abonements/__types-list/abonements__types-list.scss";
+@import "./blocks/abonements/__bg-photo/abonements__bg-photo.scss";
+@import "./blocks/types-item/__heading/types-item__heading.scss";
+@import "./blocks/types-item/__desc/types-item__desc.scss";
+@import "./blocks/types-item/__price/types-item__price.scss";
+@import "./blocks/types-item/__price/_dark/types-item__price_dark.scss";
+@import "./blocks/types-item/__button/types-item__button.scss";
+

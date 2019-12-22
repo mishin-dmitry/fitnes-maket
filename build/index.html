@@ -51,7 +51,7 @@
       </div>
     </header>
     <main>
-      <section class="gym" id="gym">
+      <section class="gym section" id="gym">
         <div class="fixed-container flex-container gym__content">
           <div class="gym-text">
             <h2 class="heading gym-text__heading">Тренажерный зал</h2>
@@ -77,42 +77,41 @@
           </div>
         </div>
       </section>
-      <!-- <section class="subscription" id="subscription">
-        <div class="fixed-container wrap-grey">
-          <h2 class="heading">Абонементы</h2>
-          <ul class="section-subscription__months-list">
-            <li class="section-subscription__months-list__item">1 месяц</li>
-            <li class="section-subscription__months-list__item">6 месяцев</li>
-            <li class="section-subscription__months-list__item">12 месяцев</li>
+      <section class="abonements wrap-grey section" id="abonements">
+        <div class="fixed-container content-container">
+          <h2 class="heading abonements__heading">Абонементы</h2>
+          <ul class="abonements__list page-list">
+            <li class="abonements__item page-item choosen">1 месяц</li>
+            <li class="abonements__item page-item">6 месяцев</li>
+            <li class="abonements__item page-item">12 месяцев</li>
           </ul>
-         <ul class="section-subscription__types-list">
-            <li class="section-subscription__types-list__item">
-              <div class="section-subscription__types-list--item">
-                <h3 class="type-list--item__heading">C тренером</h3>
-                <p class="type-list--item__desc">12 занятий</p>
-                <span class="type-list--item__price">5000 &#8381;</span>
-                <button class="type-list--item__button">Купить абонемент</button>
-              </div>
+         <ul class="abonements__types-list page-list flex-container">
+            <li class="abonements__types-item">      
+              <h3 class="types-item__heading">C тренером</h3>
+              <p class="types-item__desc">12 занятий</p>
+              <p class="types-item__price">5000</p>
+              <p class="types-item__price_dark">5000</p>
+              <button class="types-item__button button__dark-border">Купить абонемент</button>
             </li>
-            <li class="section-subscription__types-list__item">
-              <div class="section-subscription__types-list--item">
-                <h3 class="type-list--item__heading">Дневной</h3>
-                <p class="type-list--item__desc">С 8:00 до 17:00</p>
-                <span class="type-list--item__price">1700 &#8381;</span>
-                <button class="type-list--item__button">Купить абонемент</button class="type-list--item__button">
-              </div>
+            <li class="abonements__types-item choosen-type">
+              <h3 class="types-item__heading">Дневной</h3>
+              <p class="types-item__desc">с 8:00 до 17:00</p>
+              <p class="types-item__price">1700</p>
+              <p class="types-item__price_dark">1700</p>
+              <button class="types-item__button button__dark-border choosen-button">Купить абонемент</button>
             </li>
-            <li class="section-subscription__types-list__item">
-              <div class="section-subscription__types-list--item">
-                <h3 class="type-list--item__heading">Полный день</h3>
-                <p class="type-list--item__desc">С 8:00 до 22:00</p>
-                <span class="type-list--item__price">2700 &#8381;</span>
-                <button class="type-list--item__button">Купить абонемент</button>
-              </div>
+            <li class="abonements__types-item">
+              <h3 class="types-item__heading">Полный день</h3>
+              <p class="types-item__desc">с 8:00 до 22:00</p>
+              <p class="types-item__price">2700</p>
+              <p class="types-item__price_dark">2700</p>
+              <button class="types-item__button button__dark-border">Купить абонемент</button>
             </li>
           </ul>
+          <img src="../img/blin.png" alt="Фото Блинов" class="abonements__bg-photo">
         </div>
       </section>
+      <!--
       <aside class="aside">
         <div class="fixed-container flex-container wrap-white">
           <div class="aside__info-container">
