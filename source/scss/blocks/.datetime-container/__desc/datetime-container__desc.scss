@@ -1,0 +1,11 @@
+.datetime-container__desc {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+
+  &:last-child {
+    border-top: 1px solid #fff;
+  }
+}

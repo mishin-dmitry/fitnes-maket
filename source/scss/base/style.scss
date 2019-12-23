@@ -38,8 +38,6 @@ body {
   text-decoration: none;
 }
 
-
-
 .page-list {
   margin: 0;
   padding: 0;
@@ -82,7 +80,7 @@ body {
 }
 
 .wrap-grey {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .choosen {
@@ -97,7 +95,7 @@ body {
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border: 2px solid #1C3374;
+  border: 2px solid #1c3374;
   color: #102654;
   background-color: transparent;
   transition: 0.5s;
@@ -107,13 +105,49 @@ body {
 
 .choosen-type {
   border: 7px solid !important;
-  border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%) !important;
-  border-image-slice: 1 !important; 
-  transition: 0.5s ;
+  border-image: linear-gradient(
+    111.72deg,
+    #ed0233 17.6%,
+    #003eb7 95.31%
+  ) !important;
+  border-image-slice: 1 !important;
+  transition: 0.5s;
 }
 
 .choosen-button {
   color: white !important;
-  background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%) !important;
+  background: linear-gradient(
+    111.72deg,
+    #ed0233 17.6%,
+    #003eb7 95.31%
+  ) !important;
   transition: 0.5s;
+}
+
+.prev {
+  position: absolute;
+  left: -42px;
+  bottom: 131px;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/arrow-left.png");
+  background-repeat: no-repeat;
+  outline: 0;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  right: -42px;
+  bottom: 131px;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/arrow-right.png");
+  background-repeat: no-repeat;
+  outline: 0;
+  cursor: pointer;
 }
