@@ -1,0 +1,23 @@
+.types-item {
+  position: relative;
+  transition: 0.5s;
+  border: 7px solid transparent;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    border: 7px solid;
+    border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1;
+    transition: 0.5s;
+
+    .types-item__button {
+      color: white;
+      border-color: #fff;
+      padding: 24px 43px 24px 44px;
+      background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+      transition: 0.5s;
+      outline: 0;
+    }
+  }
+}

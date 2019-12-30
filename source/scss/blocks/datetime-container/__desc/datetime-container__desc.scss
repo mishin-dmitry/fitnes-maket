@@ -1,10 +1,15 @@
 .datetime-container__desc {
-    margin: 0 28px 16px 0;
-    font-family: "Roboto Condensed";
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
-    color: #FFFFFF;
-    border-top: 1px solid #FFFFFF;
-    box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  box-sizing: border-box;
+
+  &:first-of-type {
+    display: inline-block;
+    margin-bottom: 11px;
+  }
 }

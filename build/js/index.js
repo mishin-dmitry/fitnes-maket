@@ -5,8 +5,8 @@ $(".coaches__list").slick({
   variableWidth: true,
   slidesToShow: 4,
   slidesToScroll: 4,
-  prevArrow: $('.prev'),
-  nextArrow: $('.next'),
+  prevArrow: $(".prev"),
+  nextArrow: $(".next"),
   responsive: [
     {
       breakpoint: 1024,
@@ -32,4 +32,14 @@ $(".coaches__list").slick({
       }
     }
   ]
+});
+
+$('.comments__list').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  variableWidth: true,
+  slidesToShow: 1,
+  prevArrow: $(".prev_section_comments"),
+  nextArrow: $(".next_section_comments"),
 });

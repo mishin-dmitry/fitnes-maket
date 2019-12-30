@@ -1,0 +1,18 @@
+.main-promo__link {
+    margin: 0;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 1px solid #FFFFFF;
+    transition: 0.5s;
+
+    &:hover {
+        transition: 0.5s;
+        font-size: 15px;
+    }
+}

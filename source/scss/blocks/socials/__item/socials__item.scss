@@ -1,4 +1,6 @@
 .socials__item {
-    padding-top: 14px;
+  &:not(:first-child) {
+    margin-top: 15px;
+    text-align: end;
   }
-  
+}

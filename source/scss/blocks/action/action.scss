@@ -1,0 +1,10 @@
+.action {
+    padding: 18px 28px 28px 28px;
+    border: 7px solid;
+    border-image: linear-gradient(111.72deg,#ed0233 17.6%,#003eb7 95.31%);
+    border-image-slice: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
