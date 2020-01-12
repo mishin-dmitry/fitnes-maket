@@ -1,0 +1,102 @@
+.form__title {
+  margin: 0 0 40px;
+  font-family: "Bebas Neue";
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+
+.form__submit {
+  display: block;
+  margin: 29px 0 0;
+  padding: 17px 163px 17px 165px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #102654;
+  }
+}
+
+.form__input {
+  width: 190px;
+  padding-bottom: 5px;
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  outline: 0;
+
+  &::placeholder {
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  &:first-child {
+    margin-right: 26px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .form__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .form__input {
+    width: 205px;
+
+    &:first-child {
+      margin-right: 57px;
+    }
+  }
+
+  .form__submit {
+    padding: 17px 197px 17px 194px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 44px;
+  }
+
+  .form__input {
+    width: 100%;
+    margin-bottom: 38px;
+    
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 36px;
+    }
+  }
+
+  .form__submit {
+    padding: 17px 104px;
+    margin-top: 0;
+  }
+}

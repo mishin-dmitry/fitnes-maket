@@ -1,0 +1,31 @@
+.header-socials__list {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 0 -9px 0 0;
+  padding: 0 0 41px 0;
+  list-style-type: none;
+}
+
+.header-socials__link {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+  &:hover {
+    text-shadow: 3px 3px 5px black;
+    transition: 0.5s;
+  }
+}
+
+.header-socials__item {
+  &:not(:first-child) {
+    margin-top: 15px;
+    text-align: end;
+  }
+}

@@ -1,0 +1,30 @@
+.bottomline-socials__icon {
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 11px 7px black;
+    transition: 0.5s;
+  }
+}
+
+.bottomline-socials__icon_type_vkontakte {
+  padding-top: 3px;
+}
+
+@media (max-width: 767px) {
+  .bottomline-socials__icon_type_vkontakte {
+    width: 32px;
+  }
+
+  .bottomline-socials__icon_type_instagram {
+    width: 27px;
+    margin: -2px 0 0;
+  }
+
+  .bottomline-socials__icon_type_facebook {
+    width: 14px;
+    height: 27px;
+    margin: -2px 2px 0 0;
+  }
+}

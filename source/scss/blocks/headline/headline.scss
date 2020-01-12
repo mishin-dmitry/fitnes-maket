@@ -3,3 +3,42 @@
   margin-bottom: -4px;
   justify-content: space-between;
 }
+
+.headline__phone {
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    text-shadow: 3px 3px 5px black;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1199px) {
+  .headline {
+    margin-bottom: 20px;
+  }
+
+  .headline__phone {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 767px) {
+  .headline {
+    margin-bottom: 0;
+  }
+
+  .headline__phone {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

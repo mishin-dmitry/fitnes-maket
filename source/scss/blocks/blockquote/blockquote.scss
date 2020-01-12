@@ -1,6 +1,38 @@
 .blockquote {
-    display: inline-block;
-    width: 328px;
-    margin: -8px 0 0;
-    padding: 0;
+  display: inline-block;
+  width: 328px;
+  margin: -8px 0 0;
+  padding: 0;
+}
+
+.blockquote__desc {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.blockquote__author {
+  display: block;
+  margin: 0 0 13px;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .blockquote {
+    width: auto;
+  }
+
+  .blockquote__author {
+    margin: 4px 0 20px 99px;
+    text-align: start;
+  }
 }

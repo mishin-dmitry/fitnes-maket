@@ -1,6 +1,116 @@
 .contacts {
-    background-color: white;
-    padding-top: 64px;
-    margin-right: 58px;
-    box-sizing: border-box;
+  background-color: white;
+  margin: 64px 58px 0 0;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  margin: 0 0 45px -8px;
+  font-family: "Bebas Neue";
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.contacts__subtitle {
+  margin: 0 0 3px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #102654;
+}
+
+.contacts__right-container {
+  box-sizing: border-box;
+  padding-left: 57px;
+}
+
+.contacts__left-container {
+  box-sizing: border-box;
+  padding-right: 57px;
+  border-right: 1px solid #74819c;
+}
+
+.contacts__link {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+  text-decoration: none;
+}
+
+.contacts__desc {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+
+  &:nth-of-type(2n + 1) {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contacts {
+    margin: 0;
+    padding: 66px 0 63px 141px;
+  }
+
+  .contacts__title {
+    margin: 0 0 36px -8px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .contacts__subtitle {
+    margin: 0 0 6px;
+    font-size: 20px;
+  }
+
+  .contacts__desc {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .contacts__left-container {
+    margin-left: -7px;
+    padding-right: 48px;
+  }
+
+  .contacts__right-container {
+    padding-left: 46px;
+  }
+
+  .contacts__link {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    padding: 66px 0 63px 23px;
+  }
+
+  .contacts__title {
+    margin: 0 0 38px -8px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .contacts__left-container {
+    padding: 0;
+    margin-bottom: 20px;
+    border: none;
+  }
+
+  .contacts__right-container {
+    padding: 0;
+    margin-left: -8px;
+  }
 }

@@ -21,3 +21,132 @@
     }
   }
 }
+
+.types-item__button {
+  padding: 24px 43px 24px 44px;
+  margin: 28px 0 60px 1px;
+  border: 2px solid #102654;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #102654;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #fff;
+  outline: 0;
+}
+
+.types-item__desc {
+  margin: 10px 0 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  line-height: 150%;
+  color: #495a7d;
+}
+
+.types-item__price {
+  margin: 11px 0 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 150%;
+  color: #e8e8e8;
+  opacity: 0.48;
+}
+
+.types-item__price_color_dark-blue {
+  color: #103aae;
+  opacity: 1;
+}
+
+.types-item__price_position_absolute {
+  position: absolute;
+  top: 183px;
+  left: 90px;
+  margin: 0;
+}
+
+.types-item__price_size_small {
+  font-size: 60px;
+}
+
+.types-item__symbol {
+  color: #102654;
+}
+
+.types-item__title {
+  margin: 55px 0 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-align: center;
+  color: #102654;
+}
+
+.types-item_choosen_yes {
+  border: 7px solid;
+  border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-slice: 1;
+
+  &:hover {
+    border: 7px solid;
+    border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1;
+  }
+
+  & button {
+    color: white;
+    border-color: #fff;
+    padding: 24px 43px 24px 44px;
+    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .types-item__price_position_absolute {
+    top: 183px;
+    left: 131px;
+  }
+}
+
+@media (max-width: 767px) {
+  .types-item__title {
+    margin: 44px 0 0;
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .types-item__price {
+    font-size: 80px;
+  }
+
+  .types-item__price_size_small {
+    font-size: 48px;
+  }
+
+  .types-item__price_position_absolute {
+    top: 155px;
+    left: 74px;
+  }
+
+  .types-item__symbol {
+    font-size: 45px;
+    margin-left: -2px;
+  }
+
+  .types-item__button {
+    padding: 24px 43px 24px 44px;
+    margin: 24px 0 47px 1px;
+  }
+
+  .abonements__wrap_background_image-tablet {
+    display: none;
+  }
+}

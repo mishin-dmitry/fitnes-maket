@@ -9,16 +9,7 @@ $(".coaches__list").slick({
   nextArrow: $(".next"),
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
+      breakpoint: 1199,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -34,12 +25,78 @@ $(".coaches__list").slick({
   ]
 });
 
-$('.comments__list').slick({
+$(".comments__list").slick({
   dots: false,
   infinite: true,
   speed: 300,
   variableWidth: true,
   slidesToShow: 1,
   prevArrow: $(".prev_section_comments"),
-  nextArrow: $(".next_section_comments"),
+  nextArrow: $(".next_section_comments")
 });
+
+$(".header__button").on("click", function(e) {
+  e.preventDefault();
+
+  $("html, body").animate(
+    {
+      scrollTop: $("#abonements").offset().top
+    },
+    500,
+    "linear"
+  );
+});
+
+// ниже реализация перехода на несуществующую страницу в макете
+// при нажатии на кнопку купить абонемент или заполнить заявку
+
+const buyAbonementBtn = document.querySelector(".types-item__button");
+const requestBtn = document.querySelector(".aside__button");
+
+buyAbonementBtn.addEventListener("click", function() {
+  window.location.href = "#";
+});
+
+requestBtn.addEventListener("click", function() {
+  window.location.href = "#";
+});
+
+const abonementsItems = document.querySelectorAll(".abonements__item");
+
+for (let i = 0; i < abonementsItems.length; i++) {
+  clickAbonementsItem(abonementsItems[i]);
+}
+
+function toggleUnderline(abonementsItem) {
+  for (let j = 0; j < abonementsItems.length; j++) {
+    abonementsItems[j].classList.remove("abonements__item_choosen_yes");
+  }
+
+  abonementsItem.classList.add("abonements__item_choosen_yes");
+}
+
+function clickAbonementsItem(abonementsItem) {
+  abonementsItem.addEventListener("click", function() {
+    toggleUnderline(abonementsItem);
+  });
+}
+
+const typesItems = document.querySelectorAll(".types-item");
+
+for (k = 0; k < typesItems.length; k++) {
+  clickTypesItem(typesItems[k]);
+}
+
+function toggleBorder(typesItem) {
+  for (h = 0; h < typesItems.length; h++) {
+    typesItems[h].classList.remove("types-item_choosen_yes");
+  }
+
+  typesItem.classList.add("types-item_choosen_yes");
+}
+
+function clickTypesItem(typesItem) {
+  typesItem.addEventListener("click", function() {
+    toggleBorder(typesItem);
+  });
+}

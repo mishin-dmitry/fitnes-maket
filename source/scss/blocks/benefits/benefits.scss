@@ -1,3 +1,51 @@
 .benefits {
-    background: #F8F9FC;
+  background: #f8f9fc;
+}
+
+.benefits__wrap {
+  position: relative;
+  max-width: 1040px;
+  margin: auto;
+  padding: 116px 0 120px;
+}
+
+.benefits__title {
+  margin: 0 0 48px;
+  font-family: "Bebas Neue";
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 1199px) {
+  .benefits__wrap {
+    max-width: 678px;
+    padding: 96px 0 91px;
+  }
+
+  .benefits__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0 0 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits__wrap {
+    max-width: 320px;
+    padding: 67px 0 66px;
+  }
+
+  .benefits__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }

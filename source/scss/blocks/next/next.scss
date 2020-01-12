@@ -1,47 +1,48 @@
-.prev {
+.next {
   position: absolute;
-  left: -56px;
+  right: -56px;
   bottom: 132px;
   outline: 0;
   cursor: pointer;
 }
 
-.prev_phone {
+.next_phone {
   position: absolute;
   bottom: 47.5%;
+  right: 0;
   display: none !important;
   outline: 0;
   cursor: pointer;
 }
 
-.prev_section_comments {
-  left: -55px;
+.next_section_comments {
+  right: -55px;
   bottom: 106px;
 }
 
 @media (max-width: 1199px) {
-  .prev {
-    left: 0;
+  .next {
+    right: 0;
   }
 
-  .prev_section_comments {
-    left: -56px;
+  .next_section_comments {
+    right: -56px;
     bottom: 106px;
   }
 }
 
 @media (max-width: 767px) {
-  .prev {
+  .next {
     display: none !important;
   }
 
-  .prev_phone {
+  .next_phone {
     display: block !important;
     bottom: 41.5%;
   }
 
-  .prev_section_comments {
+  .next_section_comments {
     bottom: 158px;
-    left: -32px;
+    right: -32px;
   }
 }

@@ -1,5 +1,18 @@
 .form-container {
-    padding: 55px 0 68px;
-    background-color: #102654;
-    box-sizing: border-box;
+  margin: 55px 0 68px;
+  background-color: #102654;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1199px) {
+  .form-container {
+    margin: 0;
+    padding: 65px 162px 68px 132px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-container {
+    padding: 65px 15px 68px 15px;
+  }
 }

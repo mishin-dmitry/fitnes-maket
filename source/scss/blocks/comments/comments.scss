@@ -1,0 +1,81 @@
+.comments__wrap {
+  position: relative;
+  max-width: 560px;
+  margin: 114px auto 118px;
+}
+
+.comments__title {
+  margin: 0 0 55px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.comments__list {
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.comments__item {
+  position: relative;
+  width: 560px;
+  padding: 62px 62px 57px 170px;
+  margin: auto 20px;
+  background-color: #1c3374;
+  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.comments__avatar {
+  position: absolute;
+  left: 62px;
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 1199px) {
+  .comments__wrap {
+    max-width: 566px;
+    margin: 96px auto 99px;
+  }
+
+  .comments__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0 0 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .comments__wrap {
+    max-width: 226px;
+    margin: 67px auto 69px;
+  }
+
+  .comments__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .comments__list {
+    width: 226px;
+  }
+
+  .comments__item {
+    width: 226px;
+    text-align: center;
+    padding: 48px 25px 35px;
+  }
+
+  .comments__avatar {
+    width: 68px;
+    height: 68px;
+    left: 42px;
+    top: 40px;
+  }
+}

@@ -1,0 +1,27 @@
+.footer__wrap {
+  max-width: 1160px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer__container_theme_gradient {
+  background: linear-gradient(to right, #102654 50%, white 50%);
+  border-top: 1px solid #74819c;
+}
+
+@media (max-width: 1199px) {
+  .footer__wrap {
+    max-width: 768px;
+  }
+
+  .footer__container_theme_gradient {
+    background: none;
+    border-top: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__wrap {
+    max-width: 320px;
+  }
+}
