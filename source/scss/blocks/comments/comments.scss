@@ -7,11 +7,11 @@
 .comments__title {
   margin: 0 0 55px;
   text-align: center;
-  font-family: "Bebas Neue";
-  font-size: 49px;
-  line-height: 49px;
+  font-family: $font-family_title;
+  font-size: $title_desktop;
+  line-height: $line-height_desktop;
   letter-spacing: 0.03em;
-  color: #102654;
+  color: $text-color_dark;
 }
 
 .comments__list {
@@ -25,7 +25,7 @@
   width: 560px;
   padding: 62px 62px 57px 170px;
   margin: auto 20px;
-  background-color: #1c3374;
+  background-color: $text-color_light;
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
   box-sizing: border-box;
   justify-content: space-between;
@@ -38,28 +38,28 @@
   height: 80px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width:$tablet-breakpoint) {
   .comments__wrap {
     max-width: 566px;
     margin: 96px auto 99px;
   }
 
   .comments__title {
-    font-size: 42px;
-    line-height: 42px;
+    font-size: $title_tablet;
+    line-height: $line-height_tablet;
     margin: 0 0 45px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .comments__wrap {
     max-width: 226px;
     margin: 67px auto 69px;
   }
 
   .comments__title {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: $title_phone;
+    line-height: $line-height_phone;
   }
 
   .comments__list {

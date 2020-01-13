@@ -31,18 +31,18 @@
   transform: translateX(-50%);
   top: 238px;
   width: 240px;
-  background-color: #1c3374;
+  background-color: $text-color_light;
 }
 
 .benefits-item__title {
   margin: 0 0 5px;
   padding: 0;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
-  line-height: 150%;
-  color: #102654;
+  line-height: $line-height_main;
+  color: $text-color_dark;
 }
 
 .benefits-item__title_color_white {
@@ -50,7 +50,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 74px;
-  color: #fff;
+  color: $white;
 }
 
 .benefits-item__title_size_small {
@@ -71,11 +71,11 @@
 .benefits-item__desc {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
-  color: #102654;
+  color: $text-color_dark;
 }
 
 .benefits-item__desc_size_small {
@@ -83,7 +83,7 @@
   margin-top: -17px;
   font-weight: normal;
   font-size: 14px;
-  color: #2e35ac;
+  color: $text-color_blue;
 }
 
 .benefits-item__desc_size_big {
@@ -94,11 +94,11 @@
 .benefits-item__desc_color_white {
   margin: 34px 0 60px;
   font-weight: 400;
-  color: #ffffff;
+  color: $white;
   text-align: center;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .benefits-item {
     width: 320px;
 
@@ -164,7 +164,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .benefits-item {
     width: 100%;
 

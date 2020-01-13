@@ -2,16 +2,16 @@
   padding: 34px 45px 44px;
   width: 279px;
   box-sizing: border-box;
-  background-color: #ed0233;
+  background-color: $red;
 }
 
 .main-promo__title {
   margin: 0;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-weight: bold;
   font-size: 28px;
   line-height: 156%;
-  color: #ffffff;
+  color: $white;
 }
 
 .main-promo__title_size_big {
@@ -22,32 +22,32 @@
 
 .main-promo__link {
   margin: 0;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
-  border-bottom: 1px solid #ffffff;
-  transition: 0.5s;
+  border-bottom: 1px solid $white;
+  transition: $transition;
 
   &:hover {
-    transition: 0.5s;
+    transition: $transition;
     font-size: 15px;
   }
 }
 
 .main-promo__desc {
   margin: 0 0 187px;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-size: 18px;
   line-height: 140%;
-  color: #ffffff;
+  color: $white;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .main-promo {
     width: 100%;
     text-align: center;

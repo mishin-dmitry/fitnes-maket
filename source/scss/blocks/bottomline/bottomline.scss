@@ -1,10 +1,10 @@
 .bottomline {
-  background-color: #030a1a;
+  background-color: $black;
 }
 
 .bottomline__wrap {
   position: relative;
-  max-width: 1160px;
+  max-width: $desktop-wrap;
   margin: auto;
   padding: 42px 0 38px;
   justify-content: space-between;
@@ -19,9 +19,9 @@
   display: none;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .bottomline__wrap {
-    max-width: 678px;
+    max-width: $tablet-wrap;
     padding: 45px 0 41px;
   }
 
@@ -30,9 +30,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .bottomline__wrap {
-    max-width: 290px;
+    max-width: $phone-wrap;
     padding: 45px 0 46px;
   }
 

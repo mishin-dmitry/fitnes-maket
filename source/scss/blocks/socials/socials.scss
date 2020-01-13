@@ -13,17 +13,17 @@
 }
 
 .socials__link {
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-style: normal;
   font-size: 12px;
   line-height: 14px;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
-  transition: 0.5s;
+  transition: $transition;
 
   &:hover {
     text-shadow: 3px 3px 5px black;
-    transition: 0.5s;
+    transition: $transition;
   }
 }
 

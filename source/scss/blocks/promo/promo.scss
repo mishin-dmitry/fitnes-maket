@@ -1,17 +1,17 @@
 .promo__wrap {
   position: relative;
-  max-width: 1160px;
+  max-width: $desktop-wrap;
   margin: auto;
   padding-top: 110px;
 }
 
 .promo__title {
   margin: 0 0 56px;
-  font-family: "Bebas Neue";
-  font-size: 49px;
-  line-height: 49px;
+  font-family: $font-family_title;
+  font-size: $title_desktop;
+  line-height: $line-height_desktop;
   letter-spacing: 0.03em;
-  color: #102654;
+  color: $text-color_dark;
   text-align: center;
 }
 
@@ -36,15 +36,15 @@
   display: none;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .promo__wrap {
-    max-width: 678px;
+    max-width: $tablet_wrap;
     padding-top: 95px;
   }
 
   .promo__title {
-    font-size: 42px;
-    line-height: 42px;
+    font-size: $title_tablet;
+    line-height: $line-height_tablet;
     margin: 0 0 45px;
   }
 
@@ -68,15 +68,15 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .promo__wrap {
-    max-width: 290px;
+    max-width: $phone-wrap;
     padding-top: 66px;
   }
 
   .promo__title {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: $title_phone;
+    line-height: $line-height_phone;
   }
 
   .promo__photo_tablet {

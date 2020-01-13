@@ -5,19 +5,19 @@
 
 .inner-block__desc {
   margin: 0;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
+  line-height: $line-height_main;
   color: #b6bdcc;
   text-align: center;
 }
 
 .inner-block__item {
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-size: 14px;
-  line-height: 150%;
-  color: #ffffff;
+  line-height: $line-height_main;
+  color: $white;
 
   &:not(:last-child) {
     margin-bottom: 13px;
@@ -33,10 +33,10 @@
 
 .inner-block__title {
   margin: 54px 0 0;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-weight: bold;
   font-size: 18px;
-  color: #ffffff;
+  color: $white;
   text-align: center;
 }
 

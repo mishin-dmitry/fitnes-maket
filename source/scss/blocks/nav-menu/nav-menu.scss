@@ -5,15 +5,15 @@
 }
 
 .nav-menu__link {
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
-  transition: 0.5s;
+  transition: $transition;
 
   &:hover {
-    transition: 0.5s;
+    transition: $transition;
     color: grey;
   }
 }
@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .nav-menu__list {
     margin: 0 13px 0 0;
   }
@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .nav-menu__list {
     column-count: 2;
     column-gap: 76px;

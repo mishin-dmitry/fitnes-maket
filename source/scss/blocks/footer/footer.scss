@@ -1,5 +1,5 @@
 .footer__wrap {
-  max-width: 1160px;
+  max-width: $desktop-wrap;
   margin: auto;
   justify-content: space-between;
 }
@@ -9,7 +9,7 @@
   border-top: 1px solid #74819c;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .footer__wrap {
     max-width: 768px;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .footer__wrap {
     max-width: 320px;
   }

@@ -1,16 +1,16 @@
 .coaches__wrap {
   position: relative;
   margin: 7px auto 120px;
-  max-width: 1160px;
+  max-width: $desktop-wrap;
 }
 
 .coaches__title {
   margin: 0 0 56px 0;
-  font-family: "Bebas Neue";
-  font-size: 49px;
-  line-height: 49px;
+  font-family: $font-family_title;
+  font-size: $title_desktop;
+  line-height: $line-height_desktop;
   letter-spacing: 0.03em;
-  color: #102654;
+  color: $text-color_dark;
 }
 
 .coaches__list {
@@ -23,16 +23,16 @@
   margin-right: 40px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .coaches__wrap {
-    max-width: 678px;
+    max-width: $tablet-wrap;
     margin: auto auto 91px;
   }
 
   .coaches__title {
     margin: 0 0 44px 0;
-    font-size: 42px;
-    line-height: 42px;
+    font-size: $title_tablet;
+    line-height: $line-height_tablet;
     text-align: center;
   }
 
@@ -51,16 +51,16 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .coaches__wrap {
-    max-width: 290px;
+    max-width: $phone-wrap;
     margin: auto;
     padding-bottom: 88px;
   }
 
   .coaches__title {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: $title_phone;
+    line-height: $line-height_phone;
   }
 
   .coaches__list {

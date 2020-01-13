@@ -1,22 +1,22 @@
 .abonements {
-  background-color: #f8f9fc;
+  background-color: $grey;
 }
 
 .abonements__item {
   display: inline-block;
   margin: 0;
   padding: 0 0 11px 0;
-  font-family: "Roboto Condensed";
+  font-family: $font-family_main;
   font-size: 20px;
-  line-height: 150%;
+  line-height: $line-height_main;
   color: rgba(16, 38, 84, 0.5);
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
-  transition: 0.5s;
+  transition: $transition;
   cursor: pointer;
 
   &:hover {
-    color: #102654;
-    transition: 0.5s;
+    color: $text-color_dark;
+    transition: $transition;
     border-bottom: 2px solid #d10a42;
   }
 
@@ -26,7 +26,7 @@
 }
 
 .abonements__item_choosen_yes {
-  color: #102654;
+  color: $text-color_dark;
   border-bottom: 2px solid #d10a42;
 }
 
@@ -39,12 +39,12 @@
 .abonements__title {
   margin: 0 0 38px 0;
   padding: 0;
-  font-family: "Bebas Neue";
+  font-family: $font-family_title;
   font-weight: bold;
-  font-size: 49px;
-  line-height: 49px;
+  font-size: $title_desktop;
+  line-height: $line-height_desktop;
   letter-spacing: 0.03em;
-  color: #102654;
+  color: $text-color_dark;
 }
 
 .abonements__types-list {
@@ -61,12 +61,12 @@
   margin: 39px 0 0;
   width: 360px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .abonements__wrap {
   position: relative;
-  max-width: 1160px;
+  max-width: $desktop-wrap;
   margin: auto;
   padding: 115px 0 120px;
   text-align: center;
@@ -83,16 +83,16 @@
   display: none;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .abonements__wrap {
-    max-width: 678px;
+    max-width: $tablet-wrap;
     padding: 96px 0 102px;
   }
 
   .abonements__title {
     margin: 0 0 33px;
-    font-size: 42px;
-    line-height: 42px;
+    font-size: $title_tablet;
+    line-height: $line-height_tablet;
   }
 
   .abonements__list {
@@ -128,16 +128,16 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .abonements__wrap {
-    max-width: 290px;
+    max-width: $phone_wrap;
     padding: 66px 0 35px;
   }
 
   .abonements__title {
     margin: 0 0 26px;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: $title_phone;
+    line-height: $line-height_phone;
   }
 
   .abonements__list {

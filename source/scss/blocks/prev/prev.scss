@@ -19,7 +19,7 @@
   bottom: 106px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .prev {
     left: 0;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .prev {
     display: none !important;
   }

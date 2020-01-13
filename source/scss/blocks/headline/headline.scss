@@ -5,22 +5,22 @@
 }
 
 .headline__phone {
-  font-family: "Bebas Neue";
+  font-family: $font-family_title;
   font-size: 26px;
   font-weight: bold;
   line-height: 26px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
-  transition: 0.5s;
+  transition: $transition;
 
   &:hover {
     text-shadow: 3px 3px 5px black;
-    transition: 0.5s;
+    transition: $transition;
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .headline {
     margin-bottom: 20px;
   }
@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .headline {
     margin-bottom: 0;
   }

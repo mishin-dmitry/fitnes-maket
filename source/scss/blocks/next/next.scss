@@ -20,7 +20,7 @@
   bottom: 106px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet-breakpoint) {
   .next {
     right: 0;
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $phone-breakpoint) {
   .next {
     display: none !important;
   }
