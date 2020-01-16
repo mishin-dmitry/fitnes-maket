@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="спортивный зал, качалка, зал, здоровый образ жизни, идеальная фигура, спорт">
+    <meta name="description" content="Спортивный зал в городе Омск">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" type="text/css" href="js/libs/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <title>Document</title>
   </head>
   <body class="page">
@@ -31,11 +31,12 @@
               <li class="header__item">Групповые занятия</li>
                <li class="header__item">Кардио-зона</li>
             </ul>
-            <button class="header__button">
+            <a class="header__button" href="#abonements">
               Купить абонемент
-            </button>
+            </a>
           </div>
-           <img src="./img/Rectangle.jpg" alt="Тренер" class="header__photo">
+          <!-- 1x: 500px 556px 2x: 1000px 1112px -->
+           <img src="./img/man-main-photo@1x.jpg" srcset="./img/man-main-photo@1x.jpg 1x, ./img/man-main-photo@2x.jpg 2x" alt="Тренер" class="header__photo">
           <div class="header__socials socials header-socials">
             <ul class="header-socials__list">
               <li class="header-socials__item">
@@ -47,7 +48,8 @@
               <li class="header-socials__item">
                 <a href="#" class="header-socials__link">Ig</a>
               </li>
-          </ul></div>
+            </ul>
+          </div>
         </div>
       </div>
     </header>   
@@ -70,14 +72,11 @@
               залов для различных видов групповых занятий.
             </p>
           </div>
-          <img src="./img/Gym.jpg" alt="Тренажерный зал" class="gym__photo">
+          <!-- 1x: 660px 401px 2x: 1320px 802px -->
+          <img src="./img/gym-main-photo@1x.jpg" srcset="./img/gym-main-photo@1x.jpg 1x, ./img/gym-main-photo@2x.jpg 2x" alt="Тренажерный зал" class="gym__photo">
           <div class="gym__video">
             <img src="./img/button-play.png" alt="Просмотр видео" class="gym__button">
           </div>
-        </div>
-        <img src="./img/Gym_phone.jpg" alt="Тренажерный зал" class="gym__photo_hidden_yes">
-        <div class="gym__video_hidden_yes">
-          <img src="./img/button-play.png" alt="Просмотр видео" class="gym__button">
         </div>
       </section>
       <section class="abonements" id="abonements">
@@ -93,26 +92,24 @@
               <h3 class="types-item__title">C тренером</h3>
               <p class="types-item__desc">12 занятий</p>
               <p class="types-item__price">5000</p>
-              <p class="types-item__price types-item__price_color_dark-blue types-item__price_size_small types-item__price_position_absolute">5000 <span class="types-item__symbol">&#8381</span></p>
-              <button class="types-item__button">Купить абонемент</button>
+              <p class="types-item__price types-item__price_color_dark-blue types-item__price_size_small types-item__price_position_absolute">5000 <span class="types-item__symbol">&#8381;</span></p>
+              <a class="types-item__button" href="#">Купить абонемент</a>
             </li>
-            <li class="abonements__types-item types-item types-item_choosen_yes">
+            <li class="abonements__types-item types-item">
               <h3 class="types-item__title">Дневной</h3>
               <p class="types-item__desc">с 8:00 до 17:00</p>
               <p class="types-item__price">1700</p>
-              <p class="types-item__price types-item__price_color_dark-blue types-item__price_size_small types-item__price_position_absolute">1700 <span class="types-item__symbol">&#8381</span></p>
-              <button class="types-item__button types-item__button_choosen_yes">Купить абонемент</button>
+              <p class="types-item__price types-item__price_color_dark-blue types-item__price_size_small types-item__price_position_absolute">1700 <span class="types-item__symbol">&#8381;</span></p>
+              <a class="types-item__button types-item__button_choosen_yes" href="#">Купить абонемент</a>
             </li>
             <li class="abonements__types-item types-item">
               <h3 class="types-item__title">Полный день</h3>
               <p class="types-item__desc">с 8:00 до 22:00</p>
               <p class="types-item__price">2700</p>
-              <p class="types-item__price types-item__price_color_dark-blue types-item__price_size_small types-item__price_position_absolute">2700 <span class="types-item__symbol">&#8381</span></p>
-              <button class="types-item__button">Купить абонемент</button>
+              <p class="types-item__price types-item__price_color_dark-blue types-item__price_size_small types-item__price_position_absolute">2700 <span class="types-item__symbol">&#8381;</span></p>
+              <a class="types-item__button" href="#">Купить абонемент</a>
             </li>
           </ul>
-          <img src="./img/blin.png" alt="Фото Блинов" class="abonements__wrap_background_image">
-          <img src="./img/blin_tablet.png" alt="Фото Блинов" class="abonements__wrap_background_image-tablet">
         </div>
       </section>
       <aside class="aside">
@@ -128,18 +125,18 @@
               </div>
             </div>
             <p class="aside__desc">Ежегодные соревнования по CrossFit</p>
-            <button class="aside__button aside__button_border-color_white">Заполнить заявку</button>
+            <a class="aside__button aside__button_border-color_white">Заполнить заявку</a>
           </div>
-          <img src="./img/Rectangle2.jpg" alt="Ежегодные соревнования по CrossFit" class="aside__photo">
-          <img src="./img/Rectangle2_phone.jpg" alt="Ежегодные соревнования по CrossFit" class="aside__photo_hidden_yes">
+          <div class="aside__photo"></div>
         </div>
       </aside>
       <section class="coaches" id="coaches">
         <div class="coaches__wrap">
           <h2 class="coaches__title">Тренеры</h2>
-          <ul class="coaches__list">
-            <li class="coaches__item coaches-item">
-                <img src="./img/coach1.jpg" alt="Тренер Анна Павлова" class="coaches__photo">
+          <div class="coaches__list">
+            <div class="coaches__item coaches-item">
+              <!-- 1x: 260px 294px 2x: 520px 588px -->
+                <img src="./img/coach1@1x.jpg" srcset="./img/coach1@1x.jpg 1x, ./img/coach1@2x.jpg 2x" alt="Тренер Анна Павлова" class="coaches__photo">
                 <h3 class="coaches-item__title">Анна Павлова</h3>
                 <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
                   <h3 class="inner-block__title">Анна Павлова</h3>
@@ -150,9 +147,10 @@
                     <li class="inner-block__item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-            </li>
-            <li class="coaches__item coaches-item">
-                <img src="./img/coach2.jpg" alt="Тренер Алексей Лавров" class="coaches__photo">
+            </div>
+            <div class="coaches__item coaches-item">
+              <!-- 1x: 260px 294px 2x: 520px 588px -->
+                <img src="./img/coach2@1x.jpg" srcset="./img/coach2@1x.jpg 1x, ./img/coach2@2x.jpg 2x" alt="Тренер Алексей Лавров" class="coaches__photo">
                 <h3 class="coaches-item__title">Алексей Лавров</h3>
                 <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
                   <h3 class="inner-block__title">Алексей Лавров</h3>
@@ -163,9 +161,10 @@
                     <li class="inner-block__item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-            </li>
-            <li class="coaches__item coaches-item">
-                <img src="./img/coach3.jpg" alt="Тренер Александр Пашков" class="coaches__photo">
+            </div>
+            <div class="coaches__item coaches-item">
+              <!-- 1x: 260px 294px 2x: 520px 588px -->
+                <img src="./img/coach3@1x.jpg" srcset="./img/coach3@1x.jpg 1x, ./img/coach3@2x.jpg 2x" alt="Тренер Александр Пашков" class="coaches__photo">
                 <h3 class="coaches-item__title">Александр Пашков</h3>
                 <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
                   <h3 class="inner-block__title">Александр Пашков</h3>
@@ -176,9 +175,10 @@
                     <li class="inner-block__item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-            </li>
-            <li class="coaches__item coaches-item">
-                <img src="./img/coach4.jpg" alt="Тренер Мария Кетова" class="coaches__photo">
+            </div>
+            <div class="coaches__item coaches-item">
+              <!-- 1x: 260px 294px 2x: 520px 588px -->
+                <img src="./img/coach4@1x.jpg" srcset="./img/coach4@1x.jpg 1x, ./img/coach4@2x.jpg 2x" alt="Тренер Мария Кетова" class="coaches__photo">
                 <h3 class="coaches-item__title">Мария Кетова</h3>
                 <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
                   <h3 class="inner-block__title">Мария Кетова</h3>
@@ -189,9 +189,10 @@
                     <li class="inner-block__item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-            </li>
-            <li class="coaches__item coaches-item">
-              <img src="./img/coach1.jpg" alt="Тренер Анна Павлова" class="coaches__photo">
+            </div>
+            <div class="coaches__item coaches-item">
+              <!-- 1x: 260px 294px 2x: 520px 588px -->
+              <img src="./img/coach1@1x.jpg" srcset="./img/coach1@1x.jpg 1x, ./img/coach1@2x.jpg 2x" alt="Тренер Анна Павлова" class="coaches__photo">
               <h3 class="coaches-item__title">Анна Павлова</h3>
               <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
                 <h3 class="inner-block__title">Анна Павлова</h3>
@@ -202,9 +203,10 @@
                   <li class="inner-block__item">Опыт — 6 лет</li>
                 </ul>
               </div>
-          </li>
-          <li class="coaches__item coaches-item">
-            <img src="./img/coach2.jpg" alt="Тренер Алексей Лавров" class="coaches__photo">
+          </div>
+          <div class="coaches__item coaches-item">
+            <!-- 1x: 260px 294px 2x: 520px 588px -->
+            <img src="./img/coach2@1x.jpg" srcset="./img/coach2@1x.jpg 1x, ./img/coach2@2x.jpg 2x" alt="Тренер Алексей Лавров" class="coaches__photo">
             <h3 class="coaches-item__title">Алексей Лавров</h3>
             <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
               <h3 class="inner-block__title">Алексей Лавров</h3>
@@ -215,9 +217,10 @@
                 <li class="inner-block__item">Опыт — 6 лет</li>
               </ul>
             </div>
-        </li>
-        <li class="coaches__item coaches-item">
-          <img src="./img/coach3.jpg" alt="Тренер Александр Пашков" class="coaches__photo">
+        </div>
+        <div class="coaches__item coaches-item">
+          <!-- 1x: 260px 294px 2x: 520px 588px -->
+          <img src="./img/coach3@1x.jpg" srcset="./img/coach3@1x.jpg 1x, ./img/coach3@2x.jpg 2x" alt="Тренер Александр Пашков" class="coaches__photo">
           <h3 class="coaches-item__title">Александр Пашков</h3>
           <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
             <h3 class="inner-block__title">Александр Пашков</h3>
@@ -228,9 +231,10 @@
               <li class="inner-block__item">Опыт — 6 лет</li>
             </ul>
           </div>
-        </li>
-          <li class="coaches__item coaches-item">
-              <img src="./img/coach4.jpg" alt="Тренер Мария Кетова" class="coaches__photo">
+        </div>
+          <div class="coaches__item coaches-item">
+            <!-- 1x: 260px 294px 2x: 520px 588px -->
+              <img src="./img/coach4@1x.jpg" srcset="./img/coach4@1x.jpg 1x, ./img/coach4@2x.jpg 2x" alt="Тренер Мария Кетова" class="coaches__photo">
               <h3 class="coaches-item__title">Мария Кетова</h3>
               <div class="coaches-item__inner-block inner-block inner-block_hidden_yes">
                 <h3 class="inner-block__title">Мария Кетова</h3>
@@ -241,8 +245,8 @@
                   <li class="inner-block__item">Опыт — 6 лет</li>
                 </ul>
               </div>
-          </li>
-          </ul>
+            </div>
+        </div>
           <svg width="16" height="32" class="prev">
             <polyline points="16,32 0,16 16,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
           </svg>
@@ -315,9 +319,7 @@
                 <p class="main-promo__desc">Безлимитный абонемент в тренажерный зал</p>
                 <a href="#" class="main-promo__link">Подробнее</a>
               </div>
-              <img src="./img/girl.jpg" alt="Спортивная девушка" class="promo__photo">
-              <img src="./img/girl_tablet.jpg" alt="Спортивная девушка" class="promo__photo_tablet">
-              <img src="./img/girl_phone.jpg" alt="Спортивная девушка" class="promo__photo_phone">
+              <div class="promo__photo"></div>
             </div>
             <div class="promo__right-container">
               <div class="promo__action action">
@@ -330,28 +332,31 @@
                 <p class="action__desc">Корпоративный фитнес  с командой</p>
                 <a href="#" class="action__link">Подробнее</a>
               </div>
+            </div>
           </div>
         </div>
-      </div></section>
+      </section>
       <section class="comments">
         <div class="comments__wrap">
           <h2 class="comments__title">Отзывы</h2>
-          <ul class="comments__list">
-            <li class="comments__item row">
-              <img src="./img/girl_comment.png" alt="Анна Орлова" class="comments__avatar">
+          <div class="comments__list">
+            <div class="comments__item row">
+              <!-- 1x: 80px 80px 2x: 160px 160px -->
+              <img src="./img/girl_comment@1x.png" srcset="./img/girl_comment@1x.png 1x, ./img/girl_comment@2x.png 2x" alt="Анна Орлова" class="comments__avatar">
               <blockquote class="comments__blockquote blockquote">
                 <cite class="blockquote__author">Анна Орлова</cite>
                 <p class="blockquote__desc">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </blockquote>
-            </li>
-            <li class="comments__item row">
-              <img src="./img/girl_comment.png" alt="Анна Орлова" class="comments__avatar">
+            </div>
+            <div class="comments__item row">
+              <!-- 1x: 80px 80px 2x: 160px 160px -->
+              <img src="./img/girl_comment@1x.png" srcset="./img/girl_comment@1x.png 1x, ./img/girl_comment@2x.png 2x" alt="Анна Орлова" class="comments__avatar">
               <blockquote class="comments__blockquote blockquote">
                 <cite class="blockquote__author">Анна Орлова</cite>
                 <p class="blockquote__desc">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </blockquote>
-            </li>
-          </ul>
+            </div>
+          </div>
           <svg width="16" height="32" class="prev prev_section_comments">
             <polyline points="16,32 0,16 16,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
           </svg>
@@ -371,11 +376,13 @@
       <div class="footer__container_theme_gradient">
         <div class="footer__wrap row">
             <div class="footer__form-container form-container"> 
-              <h2 class="form__title">Бесплатное занятие</h2>
-             <form action="mailto:omsk@supergym.ru" class="footer__form form">
-                <input type="text" placeholder="Имя" class="form__input">
-                <input type="text" placeholder="Телефон" class="form__input">
-                <button type="submit" class="form__submit">Отправить</button>
+              <h2 class="form-container__title">Бесплатное занятие</h2>
+             <form action="#" class="footer__form form">
+                <label for="name" class="visually-hidden">Ваше имя</label>
+                <input type="text" placeholder="Имя" id="name">
+                <label for="phone" class="visually-hidden">Ваш номер телефона</label>
+                <input type="tel" placeholder="Телефон" id="phone">
+                <button type="submit">Отправить</button>
               </form>
             </div>
             <div class="footer__contacts contacts">
@@ -406,23 +413,22 @@
                 <div class="logo bottomline__logo bottomline__logo_hidden_yes">Supergym</div>
               </li>
               <li class="nav-menu__item"><a href="#gym" class="nav-menu__link">Услуги</a></li>
-              <li class="nav-menu__item"><a href="#subscription" class="nav-menu__link">Абонементы</a></li>
+              <li class="nav-menu__item"><a href="#abonements" class="nav-menu__link">Абонементы</a></li>
               <li class="nav-menu__item"><a href="#promo" class="nav-menu__link">Акции</a></li>
               <li class="nav-menu__item"><a href="#coaches" class="nav-menu__link">Тренеры</a></li>
-              <li class="nav-menu__item"><a href="#" class="nav-menu__link">Расписание</a></li>  
+              <li class="nav-menu__item"><a href="schedule.html" class="nav-menu__link">Расписание</a></li>  
             </ul>
           </nav>
           <div class="bottomline__socials bottomline-socials row">
-            <a href="vk.com"><img src="./img/vk.png" alt="Vkontakte" class="bottomline-socials__icon bottomline-socials__icon_type_vkontakte"></a>
-            <a href="instagram.com"><img src="./img/insta.png" alt="Instagram" class="bottomline-socials__icon bottomline-socials__icon_type_instagram"></a>
-            <a href="facebook.com"><img src="./img/fb.png" alt="Facebook" class="bottomline-socials__icon bottomline-socials__icon_type_facebook"></a>
+            <a href="https://vk.com/" class="bottomline-socials__icon bottomline-socials__icon_type_vkontakte" title="Мы Вконтакте"></a>
+            <a href="https://www.instagram.com/" class="bottomline-socials__icon bottomline-socials__icon_type_instagram" title="Мы в Инстаграмме"></a>
+            <a href="https://www.facebook.com/" class="bottomline-socials__icon bottomline-socials__icon_type_facebook" title="Мы в Фейсбуке"></a>
+          </div>
           </div>
         </div>
-    </div></footer>
+    </footer>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/libs/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

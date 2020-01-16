@@ -1,0 +1,98 @@
+.form button {
+  display: block;
+  margin: 29px 0 0;
+  padding: 17px 163px 17px 165px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: transparent;
+  border: 3px solid $white;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: 0;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+    background-color: $white;
+    color: $text-color_dark;
+  }
+}
+
+.form input {
+  width: 190px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  outline: 0;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white;
+  }
+
+  &:first-child {
+    margin-right: 26px;
+  }
+
+  &:hover {
+    border-color: grey;
+    transition: $transition;
+
+    &::placeholder {
+      transition: $transition;
+      color: grey;
+    }
+  }
+
+  &:focus {
+    border-color: grey;
+    transition: $transition;
+
+    &::placeholder {
+      transition: $transition;
+      color: transparent;
+    }
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .form input {
+    width: 205px;
+
+    &:first-child {
+      margin-right: 57px;
+    }
+  }
+
+  .form button {
+    padding: 17px 197px 17px 194px;
+  }
+}
+
+@media (max-width: $phone-breakpoint) {
+  .form input {
+    width: 100%;
+    margin-bottom: 38px;
+
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 36px;
+    }
+  }
+
+  .form button {
+    padding: 17px 104px;
+    margin-top: 0;
+  }
+}

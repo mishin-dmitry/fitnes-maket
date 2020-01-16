@@ -1,0 +1,60 @@
+.main-promo {
+  padding: 34px 45px 44px;
+  max-width: 279px;
+  box-sizing: border-box;
+  background-color: $red;
+}
+
+.main-promo__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 156%;
+  color: $white;
+}
+
+.main-promo__title_size_big {
+  display: block;
+  margin-top: -25px;
+  font-size: 70px;
+}
+
+.main-promo__link {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+  border-bottom: 1px solid $white;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+    text-shadow: 3px 3px 5px black;
+  }
+}
+
+.main-promo__desc {
+  margin: 0 0 187px;
+  font-size: 18px;
+  line-height: 140%;
+  color: $white;
+}
+
+@media (max-width: $phone-breakpoint) {
+  .main-promo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-promo__title {
+    margin-bottom: -5px;
+  }
+
+  .main-promo__desc {
+    margin: 0 0 30px;
+  }
+}
