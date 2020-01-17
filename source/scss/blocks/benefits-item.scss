@@ -74,17 +74,11 @@
   line-height: 140%;
 }
 
-.benefits-item__desc_size_small {
+.benefits-item__desc_weight_normal {
   display: block;
-  margin-top: -17px;
   font-weight: normal;
   font-size: 14px;
   color: $text-color_blue;
-}
-
-.benefits-item__desc_size_big {
-  font-weight: bold;
-  font-size: 71px;
 }
 
 .benefits-item__desc_color_white {
@@ -133,10 +127,6 @@
 
   .benefits-item__title {
     font-size: 20px;
-  }
-
-  .benefits-item__desc_size_big {
-    font-size: 58px;
   }
 
   .benefits-item__right-container {

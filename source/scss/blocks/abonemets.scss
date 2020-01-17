@@ -7,19 +7,18 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .abonements {
-   background-image: url("../img/blin@2x.png");
-   background-size: 321px auto;
- }
+    background-image: url("../img/blin@2x.png");
+    background-size: 321px auto;
+  }
 }
 
 .abonements__item {
   display: inline-block;
-  margin: 0;
+  margin: 0 0 -2px;
   padding: 0 0 11px 0;
   font-size: 20px;
   line-height: $line-height_main;
   color: rgba(16, 38, 84, 0.5);
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   transition: $transition;
   cursor: pointer;
 
@@ -29,8 +28,8 @@
     border-bottom: 2px solid #d10a42;
   }
 
-  &:nth-child(2n) {
-    padding: 0 47px 11px;
+  &:not(:last-child) {
+    margin-right: 43px;
   }
 }
 
@@ -40,9 +39,11 @@
 }
 
 .abonements__list {
+  max-width: 341px;
+  width: 100%;
+  margin: auto;
   padding: 0;
-  text-align: center;
-  font-size: 0;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .abonements__title {
@@ -80,20 +81,9 @@
   text-align: center;
 }
 
-// .abonements__wrap_background_image {
-//   position: absolute;
-//   right: -111px;
-//   bottom: -150px;
-// }
-
-// .abonements__wrap_background_image-tablet {
-//   position: absolute;
-//   display: none;
-// }
 
 @media (max-width: $tablet-breakpoint) {
   .abonements__wrap {
-    max-width: $tablet-wrap;
     padding: 96px 0 102px;
   }
 
@@ -124,21 +114,11 @@
     width: 442px;
     margin: 40px 0 0;
   }
-
-  // .abonements__wrap_background_image {
-  //   display: block;
-  // }
-
-  // .abonements__wrap_background_image-tablet {
-  //   display: block;
-  //   right: -45px;
-  //   bottom: -125px;
-  // }
 }
 
 @media (max-width: $phone-breakpoint) {
+
   .abonements__wrap {
-    max-width: $phone_wrap;
     padding: 66px 0 35px;
   }
 

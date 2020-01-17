@@ -61,32 +61,37 @@
             <p class="gym__desc">
               Просторный зал площадью 900 кв/м
             </p>
-            <p class="gym__desc gym__desc_weight_light">
-              Supergym – самый большой фитнес центр за Уралом и идеальное место
-              для укрепления тела и здоровья. Тренажерный зал оснащен всем
-              необходимым современным оборудованием для всех спортсменов.
-            </p>
-            <p class="gym__desc gym__desc_weight_light">
-              В зале расположены отдельная зона для Crossfit и кардио-зона с 40
-              тренажерами. Также в фитнес центре есть несколько оборудованных
-              залов для различных видов групповых занятий.
-            </p>
+            <div class="gym__desc gym__desc_weight_light">
+              <p>
+                Supergym – самый большой фитнес центр за Уралом и идеальное место
+                для укрепления тела и здоровья. Тренажерный зал оснащен всем
+                необходимым современным оборудованием для всех спортсменов.
+              </p>
+              <p>
+                В зале расположены отдельная зона для Crossfit и кардио-зона с 40
+                тренажерами. Также в фитнес центре есть несколько оборудованных
+                залов для различных видов групповых занятий.
+              </p>
+            </div>
           </div>
           <!-- 1x: 660px 401px 2x: 1320px 802px -->
-          <img src="./img/gym-main-photo@1x.jpg" srcset="./img/gym-main-photo@1x.jpg 1x, ./img/gym-main-photo@2x.jpg 2x" alt="Тренажерный зал" class="gym__photo">
+          <div class="gym__photo">
+            <img src="./img/gym-main-photo@1x.jpg" srcset="./img/gym-main-photo@1x.jpg 1x, ./img/gym-main-photo@2x.jpg 2x" alt="Тренажерный зал" class="gym__photo">
+          </div>
           <div class="gym__video">
-            <img src="./img/button-play.png" alt="Просмотр видео" class="gym__button">
+            <div class="gym__wrap_opacity_yes"></div>
+            <button class="gym__button"></button>
           </div>
         </div>
       </section>
       <section class="abonements" id="abonements">
         <div class="abonements__wrap">
           <h2 class="abonements__title">Абонементы</h2>
-          <ul class="abonements__list">
-            <li class="abonements__item  abonements__item_choosen_yes">1 месяц</li>
-            <li class="abonements__item">6 месяцев</li>
-            <li class="abonements__item">12 месяцев</li>
-          </ul>
+          <div class="abonements__list">
+            <a class="abonements__item">6 месяцев</a>
+            <a class="abonements__item">12 месяцев</a>
+            <a class="abonements__item  abonements__item_choosen_yes">1 месяц</a>
+          </div>
          <ul class="abonements__types-list">
             <li class="abonements__types-item types-item">      
               <h3 class="types-item__title">C тренером</h3>
@@ -247,18 +252,26 @@
               </div>
             </div>
         </div>
-          <svg width="16" height="32" class="prev">
-            <polyline points="16,32 0,16 16,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
-          <svg width="16" height="32" class="next">
-            <polyline points="0,32 16,16 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
-          <svg width="10" height="19" class="prev_phone">
-            <polyline points="10,19 0,9 10,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
-          <svg width="10" height="19" class="next_phone">
-            <polyline points="0,19 10,9 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
+          <button class="prev">
+            <svg width="16" height="32">
+              <polyline points="16,32 0,16 16,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
+          <button class="next">
+            <svg width="16" height="32">
+              <polyline points="0,32 16,16 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
+          <button class="prev_phone">
+            <svg width="10" height="19">
+              <polyline points="10,19 0,9 10,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
+          <button class="next_phone">
+            <svg width="10" height="19" class="next_phone">
+              <polyline points="0,19 10,9 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="benefits">
@@ -267,7 +280,9 @@
           <ul class="benefits__list row">
             <li class="benefits__item benefits-item row">
               <div class="benefits-item__left-container">
-                <p class="benefits-item__desc benefits-item__desc_size_big">900<span class="benefits-item__desc benefits-item__desc_size_small">кв/м</span></p>
+                <!-- 1x: 108px 49px 2x: 216px 98px -->
+                <img src="./img/900@1x.png" srcset="./img/900@1x.png 1x, ./img/900@2x.png 2x" alt="Площадь">
+                <p class="benefits-item__desc benefits-item__desc_weight_normal">кв/м</p>
               </div>
               <div class="benefits-item__right-container">
                 <h3 class="benefits-item__title">Площадь</h3>
@@ -276,7 +291,9 @@
             </li>
             <li class="benefits__item benefits-item row">
               <div class="benefits-item__left-container">
-                <p class="benefits-item__desc benefits-item__desc_size_big">70 <span class="benefits-item__desc benefits-item__desc_size_small">машин</span></p>
+                <!-- 1x: 72px 49px 2x: 144px 98px -->
+                <img src="./img/70@1x.png" srcset="./img/70@1x.png 1x, ./img/70@2x.png 2x" alt="Парковка">
+                <p class="benefits-item__desc benefits-item__desc_size_small">машин</p>
               </div>
               <div class="benefits-item__right-container">
                 <h3 class="benefits-item__title">Собственная парковка</h3>
@@ -285,7 +302,9 @@
             </li>
             <li class="benefits__item benefits-item row">
               <div class="benefits-item__left-container">
-                <p class="benefits-item__desc benefits-item__desc_size_big">350 <span class="benefits-item__desc benefits-item__desc_size_small">мест</span></p>
+                <!-- 1x: 108px 49px 2x: 216px 98px -->
+                <img src="./img/350@1x.png" srcset="./img/350@1x.png 1x, ./img/350@2x.png 2x" alt="Количество мест">
+                <p class="benefits-item__desc benefits-item__desc_size_small">мест</p>
               </div>
               <div class="benefits-item__right-container">
                 <h3 class="benefits-item__title">Комфорт</h3>
@@ -295,7 +314,9 @@
             </li>
             <li class="benefits__item benefits-item row">
               <div class="benefits-item__left-container">
-                <p class="benefits-item__desc benefits-item__desc_size_big">5+ <span class="benefits-item__desc benefits-item__desc_size_small">лет</span></p>
+                <!-- 1x: 70px 49px 2x: 140px 98px -->
+                <img src="./img/5+@1x.png" srcset="./img/5+@1x.png 1x, ./img/5+@2x.png 2x" alt="Количество мест">
+                <p class="benefits-item__desc benefits-item__desc_size_small">лет</p>
               </div>
               <div class="benefits-item__right-container">
                 <h3 class="benefits-item__title">Тренерский опыт</h3>
@@ -357,18 +378,26 @@
               </blockquote>
             </div>
           </div>
-          <svg width="16" height="32" class="prev prev_section_comments">
-            <polyline points="16,32 0,16 16,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
-          <svg width="16" height="32" class="next next_section_comments">
-            <polyline points="0,32 16,16 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
-          <svg width="10" height="19" class="prev_phone prev_section_comments">
-            <polyline points="10,19 0,9 10,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
-          <svg width="10" height="19" class="next_phone next_section_comments">
-            <polyline points="0,19 10,9 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
-          </svg>
+          <button class="prev prev_section_comments">
+            <svg width="16" height="32">
+              <polyline points="16,32 0,16 16,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
+          <button class="next next_section_comments">
+            <svg width="16" height="32">
+              <polyline points="0,32 16,16 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
+          <button class="prev_phone prev_section_comments">
+            <svg width="10" height="19">
+              <polyline points="10,19 0,9 10,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
+          <button class="next_phone next_section_comments">
+            <svg width="10" height="19">
+              <polyline points="0,19 10,9 0,0" fill="none" stroke="#AFAFAF" stroke-width="1"></polyline>
+            </svg>
+          </button>
         </div>
       </section>
     </main>
@@ -416,7 +445,7 @@
               <li class="nav-menu__item"><a href="#abonements" class="nav-menu__link">Абонементы</a></li>
               <li class="nav-menu__item"><a href="#promo" class="nav-menu__link">Акции</a></li>
               <li class="nav-menu__item"><a href="#coaches" class="nav-menu__link">Тренеры</a></li>
-              <li class="nav-menu__item"><a href="schedule.html" class="nav-menu__link">Расписание</a></li>  
+              <li class="nav-menu__item"><a href="#" class="nav-menu__link">Расписание</a></li>  
             </ul>
           </nav>
           <div class="bottomline__socials bottomline-socials row">

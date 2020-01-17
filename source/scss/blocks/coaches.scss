@@ -23,7 +23,6 @@
 
 @media (max-width: $tablet-breakpoint) {
   .coaches__wrap {
-    max-width: $tablet-wrap;
     margin: auto auto 91px;
   }
 
@@ -51,7 +50,6 @@
 
 @media (max-width: $phone-breakpoint) {
   .coaches__wrap {
-    max-width: $phone-wrap;
     margin: auto;
     padding-bottom: 88px;
   }

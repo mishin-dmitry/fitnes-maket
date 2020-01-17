@@ -14,17 +14,49 @@
   height: 228px;
   text-align: center;
   background-color: $white;
-  background-image: linear-gradient(rgba(20, 54, 122, 0.5)),
-    url("../img/gym-small-photo@1x.jpg");
-  background-repeat: no-repeat;
+  background-image:  url("../img/gym-small-photo@1x.jpg");
   box-sizing: border-box;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .gym__video {
-   background-image: url("../img/gym-small-photo@2x.jpg");
-   background-size: 364px auto;
- }
+    background-image: url("../img/gym-small-photo@2x.jpg");
+    background-size: 364px auto;
+  }
+}
+
+.gym__wrap_opacity_yes {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.gym__button {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  background-image: url("../img/button-play@1x.png");
+  background-repeat: no-repeat;
+  transition: $transition;
+  z-index: 10;
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: $transition;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .gym__button {
+    background-image: url("../img/button-play@2x.png");
+    background-size: 100px auto;
+  }
 }
 
 .gym__title {
@@ -87,7 +119,6 @@
 
 @media (max-width: $tablet-breakpoint) {
   .gym__wrap {
-    max-width: $tablet-wrap;
     padding: 96px 0 175px;
   }
 
@@ -141,7 +172,6 @@
 
 @media (max-width: $phone-breakpoint) {
   .gym__wrap {
-    max-width: $phone-wrap;
     padding: 66px 0 0;
   }
 

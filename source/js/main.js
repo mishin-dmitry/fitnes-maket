@@ -62,6 +62,48 @@ function toggleUnderline(abonementsItem) {
 function clickAbonementsItem(abonementsItem) {
   abonementsItem.addEventListener("click", function() {
     toggleUnderline(abonementsItem);
+
+    debugger;
+    const typesItemPrice = document.querySelectorAll(".types-item__price");
+    const abonementsItemChoosen = document.querySelector(
+      ".abonements__item_choosen_yes"
+    );
+
+    if (abonementsItemChoosen.textContent === "6 месяцев") {
+      for (let i = 0; i < 2; i++) {
+        typesItemPrice[i].innerHTML = "15000";
+      }
+      for (let j = 2; j < 4; j++) {
+        typesItemPrice[j].innerHTML = "11000";
+      }
+      for (let k = 4; k < 6; k++) {
+        typesItemPrice[k].innerHTML = "9000";
+      }
+    } else if (abonementsItemChoosen.textContent === "12 месяцев") {
+      for (let i = 0; i < 2; i++) {
+        typesItemPrice[i].innerHTML = "35000";
+      }
+      for (let j = 2; j < 4; j++) {
+        typesItemPrice[j].innerHTML = "21000";
+      }
+      for (let k = 4; k < 6; k++) {
+        typesItemPrice[k].innerHTML = "23000";
+      }
+    } else if (abonementsItemChoosen.textContent === "1 месяц") {
+      for (let i = 0; i < 2; i++) {
+        typesItemPrice[i].innerHTML = "5000";
+      }
+      for (let j = 2; j < 4; j++) {
+        typesItemPrice[j].innerHTML = "1700";
+      }
+      for (let k = 4; k < 6; k++) {
+        typesItemPrice[k].innerHTML = "2700";
+      }
+    }
+
+    for (let i = 1; i < typesItemPrice.length; i=i+2) {
+      typesItemPrice[i].innerHTML += "<span>&#8381;</span>";
+    }
   });
 }
 

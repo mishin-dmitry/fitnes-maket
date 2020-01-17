@@ -53,6 +53,10 @@
   line-height: $line-height_main;
   color: #e8e8e8;
   opacity: 0.48;
+
+  & span {
+    color: $text-color_dark;
+  }
 }
 
 .types-item__price_color_dark-blue {
@@ -71,9 +75,6 @@
   font-size: 60px;
 }
 
-.types-item__symbol {
-  color: $text-color_dark;
-}
 
 .types-item__title {
   margin: 55px 0 0;
@@ -119,6 +120,10 @@
 
   .types-item__price {
     font-size: 80px;
+    
+    & span {    
+      font-size: 45px;
+      margin-left: -2px;}
   }
 
   .types-item__price_size_small {
@@ -130,10 +135,6 @@
     left: 74px;
   }
 
-  .types-item__symbol {
-    font-size: 45px;
-    margin-left: -2px;
-  }
 
   .types-item__button {
     padding: 24px 43px 24px 44px;

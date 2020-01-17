@@ -1,9 +1,17 @@
 .prev {
   position: absolute;
   left: -56px;
-  bottom: 132px;
+  bottom: 41.5%;
+  border: none;
+  background-color: transparent;
   outline: 0;
   cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+    left: -60px;
+  }
 }
 
 .prev_phone {
@@ -12,11 +20,18 @@
   display: none !important;
   outline: 0;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+  }
 }
 
 .prev_section_comments {
   left: -55px;
-  bottom: 106px;
+  bottom: 41.5%;
 }
 
 @media (max-width: $tablet-breakpoint) {
@@ -26,7 +41,6 @@
 
   .prev_section_comments {
     left: -56px;
-    bottom: 106px;
   }
 }
 
@@ -41,7 +55,6 @@
   }
 
   .prev_section_comments {
-    bottom: 158px;
     left: -32px;
   }
 }

@@ -1,9 +1,17 @@
 .next {
   position: absolute;
   right: -56px;
-  bottom: 132px;
+  bottom: 41.5%;
   outline: 0;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+    right: -60px;
+  }
 }
 
 .next_phone {
@@ -13,11 +21,18 @@
   display: none !important;
   outline: 0;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+  }
 }
 
 .next_section_comments {
   right: -55px;
-  bottom: 106px;
+  bottom: 41.5%;
 }
 
 @media (max-width: $tablet-breakpoint) {
@@ -27,7 +42,6 @@
 
   .next_section_comments {
     right: -56px;
-    bottom: 106px;
   }
 }
 
@@ -42,7 +56,6 @@
   }
 
   .next_section_comments {
-    bottom: 158px;
     right: -32px;
   }
 }

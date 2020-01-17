@@ -26,7 +26,6 @@
 
 @media (max-width: $tablet-breakpoint) {
   .benefits__wrap {
-    max-width: $tablet-wrap;
     padding: 96px 0 91px;
   }
 
@@ -39,7 +38,6 @@
 
 @media (max-width: $phone-breakpoint) {
   .benefits__wrap {
-    max-width: 320px;
     padding: 67px 0 66px;
   }
 

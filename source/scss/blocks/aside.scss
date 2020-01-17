@@ -75,7 +75,6 @@
 
 @media (max-width: $tablet-breakpoint) {
   .aside__wrap {
-    max-width: $tablet-wrap;
     padding: 100px 0 96px;
   }
 
@@ -108,7 +107,6 @@
 
 @media (max-width: $phone-breakpoint) {
   .aside__wrap {
-    max-width: $phone_wrap;
     padding: 70px 0 68px;
   }
 }

@@ -8,7 +8,6 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header {
     background-image: url("../img/gradient@2x.jpg");
-    background-size: 1366px auto;
   }
 }
 
@@ -99,7 +98,6 @@
   }
 
   .header__wrap {
-    max-width: $tablet-wrap;
     padding: 38px 0 82px;
   }
 
@@ -142,7 +140,6 @@
 
 @media (max-width: $phone-breakpoint) {
   .header__wrap {
-    max-width: $phone-wrap;
     padding: 19px 0 80px;
   }
 

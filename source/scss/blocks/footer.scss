@@ -10,18 +10,9 @@
 }
 
 @media (max-width: $tablet-breakpoint) {
-  .footer__wrap {
-    max-width: 768px;
-  }
 
   .footer__container_theme_gradient {
     background: none;
     border-top: none;
-  }
-}
-
-@media (max-width: $phone-breakpoint) {
-  .footer__wrap {
-    max-width: 320px;
   }
 }

@@ -4,13 +4,13 @@
   border-image: $gradient-color;
   border-image-slice: 1;
 
-  &:not(:last-child) {
+  &:first-child {
     margin-bottom: 40px;
   }
 }
 
 .action__desc {
-  margin: 0 0 69px;
+  margin: 0;
   line-height: 140%;
   color: $text-color_light;
 }
@@ -43,17 +43,12 @@
 @media (max-width: $tablet-breakpoint) {
   .action {
     width: 48%;
-    padding: 18px 28px 6px 28px;
+    padding: 18px 56px 29px 28px;
     box-sizing: border-box;
 
-    &:not(:last-child) {
-      padding: 18px 56px 29px 28px;
+    &:first-child {
       margin-bottom: 0;
     }
-  }
-
-  .action:first-child .action__desc {
-    margin-bottom: 46px;
   }
 }
 
