@@ -10,9 +10,13 @@
 }
 
 @media (max-width: $tablet-breakpoint) {
+  .footer__wrap {
+    padding: 0 163px 0 133px;
+    justify-content: center;
+  }
 
   .footer__container_theme_gradient {
-    background: none;
+    background: linear-gradient(to bottom,#102654 48%,#fff 48%);;
     border-top: none;
   }
 }

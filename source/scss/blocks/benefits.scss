@@ -26,13 +26,17 @@
 
 @media (max-width: $tablet-breakpoint) {
   .benefits__wrap {
-    padding: 96px 0 91px;
+    padding: 91px 44px 91px 45px;
   }
 
   .benefits__title {
     font-size: $title_tablet;
     line-height: $line-height_tablet;
-    margin: 0 0 35px;
+    margin: 0 0 52px;
+  }
+
+  .benefits__list {
+    justify-content: center;
   }
 }
 

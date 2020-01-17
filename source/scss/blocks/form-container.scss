@@ -18,8 +18,9 @@
 
 @media (max-width: $tablet-breakpoint) {
   .form-container {
+    max-width: 472px;
     margin: 0;
-    padding: 65px 162px 68px 132px;
+    padding: 67px 0 66px;
   }
 
   .form-container__title {

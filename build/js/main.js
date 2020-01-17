@@ -5,8 +5,6 @@ $(".coaches__list").slick({
   variableWidth: true,
   slidesToShow: 4,
   slidesToScroll: 4,
-  prevArrow: $(".prev"),
-  nextArrow: $(".next"),
   responsive: [
     {
       breakpoint: 1199,
@@ -61,7 +59,6 @@ function clickAbonementsItem(abonementsItem) {
   abonementsItem.addEventListener("click", function() {
     toggleUnderline(abonementsItem);
 
-    debugger;
     const typesItemPrice = document.querySelectorAll(".types-item__price");
     const abonementsItemChoosen = document.querySelector(
       ".abonements__item_choosen_yes"

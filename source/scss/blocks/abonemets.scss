@@ -93,15 +93,13 @@
   }
 
   .abonements__list {
+    max-width: 332px;
     margin-bottom: 5px;
   }
 
   .abonements__item {
+    padding-left: 5px;
     font-size: 18px;
-
-    &:nth-child(2n) {
-      padding: 0 55px 11px;
-    }
   }
 
   .abonements__types-list {
@@ -132,10 +130,6 @@
 
   .abonements__item {
     font-size: 16px;
-
-    &:nth-child(2n) {
-      padding: 0 46px 11px;
-    }
   }
 
   .abonements__types-item {

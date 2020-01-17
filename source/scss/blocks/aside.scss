@@ -32,7 +32,7 @@
 }
 
 .aside__button {
-  display: block;
+  display: inline-block;
   padding: 25px 111px 24px;
   margin: 45px 0 0 -3px;
   font-weight: bold;
@@ -76,12 +76,11 @@
 @media (max-width: $tablet-breakpoint) {
   .aside__wrap {
     padding: 100px 0 96px;
+    justify-content: center;
   }
 
   .aside__text-container {
-    padding: 45px 21px 0 45px;
-    width: 292px;
-    height: 292px;
+    padding: 45px 45px 51px 45px;
   }
 
   .aside__title {
@@ -97,11 +96,15 @@
   }
 
   .aside__button {
-    padding: 13px 52px 12px;
+    padding: 12px 52px;
     margin: 30px 0 0 -1px;
     font-size: 10px;
     line-height: 12px;
     border: 2px solid $white;
+  }
+
+  .aside__photo {
+    max-width: 386px;
   }
 }
 

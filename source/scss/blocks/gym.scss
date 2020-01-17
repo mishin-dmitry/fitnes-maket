@@ -55,7 +55,7 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .gym__button {
     background-image: url("../img/button-play@2x.png");
-    background-size: 100px auto;
+    background-size: contain;
   }
 }
 
@@ -126,34 +126,33 @@
   }
 
   .gym__text-container {
-    width: 100%;
-    text-align: center;
-    margin: 0;
+    width: 89%;
+    margin: 0 auto;
     padding: 0;
   }
 
   .gym__title {
+    text-align: center;
     font-size: $title_tablet;
     line-height: $line-height_tablet;
   }
 
   .gym__desc {
+    text-align: center;
     margin: 0 0 34px;
   }
 
-  .gym__desc:last-child {
+  .gym__desc p:last-child {
     display: none;
   }
 
   .gym__desc_weight_light {
     padding: 0 88px;
-
-    &:not(:last-child) {
-      margin-bottom: 43px;
-    }
+    margin-bottom: 43px;
   }
 
   .gym__photo {
+    margin: auto;
     width: 678px;
     height: 345px;
   }

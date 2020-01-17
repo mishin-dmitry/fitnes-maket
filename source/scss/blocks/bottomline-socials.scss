@@ -49,6 +49,14 @@
   }
 }
 
+@media (max-width: $tablet-breakpoint) {
+  .bottomline-socials__icon {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
 @media (max-width: $phone-breakpoint) {
   .bottomline-socials__icon_type_vkontakte {
     width: 32px;

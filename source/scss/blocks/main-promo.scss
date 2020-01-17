@@ -44,8 +44,16 @@
   color: $white;
 }
 
+@media (max-width: $tablet-breakpoint) {
+  .main-promo {
+    max-width: 63%;
+    width: 100%;
+  }
+}
+
 @media (max-width: $phone-breakpoint) {
   .main-promo {
+    max-width: 767px;
     width: 100%;
     text-align: center;
   }

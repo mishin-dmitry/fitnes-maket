@@ -18,7 +18,7 @@
 }
 
 .coaches__item {
-  width: 260px;
+  width: 260px !important;
 }
 
 @media (max-width: $tablet-breakpoint) {
@@ -39,8 +39,7 @@
   }
 
   .coaches__item {
-    margin-right: 30px;
-    width: 268px;
+    width: 268px !important;
   }
 
   .coaches__photo {
@@ -64,6 +63,6 @@
   }
 
   .coaches__item {
-    width: 226px;
+    width: 226px !important;
   }
 }
