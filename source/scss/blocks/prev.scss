@@ -1,7 +1,7 @@
 .prev {
   position: absolute;
-  left: -56px;
-  bottom: 41.5%;
+  left: -62px;
+  bottom: 32.5%;
   border: none;
   background-color: transparent;
   outline: 0;
@@ -10,7 +10,7 @@
 
   &:hover {
     transition: $transition;
-    left: -60px;
+    left: -66px;
   }
 }
 

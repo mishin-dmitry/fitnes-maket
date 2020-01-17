@@ -1,7 +1,7 @@
 .gym__wrap {
   position: relative;
   margin: auto;
-  padding: 120px 0 227px 0;
+  padding: 120px 0 216px 0;
   max-width: $desktop-wrap;
 }
 
@@ -101,11 +101,14 @@
 }
 
 .gym__desc {
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
   padding: 0;
   font-size: 18px;
   line-height: $line-height_main;
+
+  & p {
+    margin: 0 0 8px;
+  }
 }
 
 .gym__desc_weight_light {

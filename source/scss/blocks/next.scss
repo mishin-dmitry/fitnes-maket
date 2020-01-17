@@ -1,7 +1,7 @@
 .next {
   position: absolute;
-  right: -56px;
-  bottom: 41.5%;
+  right: -62px;
+  bottom: 32.5%;
   outline: 0;
   cursor: pointer;
   border: none;
@@ -31,8 +31,8 @@
 }
 
 .next_section_comments {
-  right: -55px;
-  bottom: 41.5%;
+  right: -62px;
+  bottom: 32.5%;
 }
 
 @media (max-width: $tablet-breakpoint) {
@@ -41,7 +41,7 @@
   }
 
   .next_section_comments {
-    right: -56px;
+    right: -66px;
   }
 }
 

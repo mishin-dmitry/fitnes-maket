@@ -30,9 +30,7 @@ $(".comments__list").slick({
   infinite: true,
   speed: 300,
   variableWidth: true,
-  slidesToShow: 1,
-  prevArrow: $(".prev_section_comments"),
-  nextArrow: $(".next_section_comments")
+  slidesToShow: 1
 });
 
 const buyAbonementBtn = document.querySelector(".types-item__button");
@@ -101,7 +99,7 @@ function clickAbonementsItem(abonementsItem) {
       }
     }
 
-    for (let i = 1; i < typesItemPrice.length; i=i+2) {
+    for (let i = 1; i < typesItemPrice.length; i = i + 2) {
       typesItemPrice[i].innerHTML += "<span>&#8381;</span>";
     }
   });
