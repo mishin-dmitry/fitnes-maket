@@ -40,8 +40,9 @@
 @media (max-width: $phone-breakpoint) {
   .nav-menu__list {
     column-count: 2;
-    column-gap: 76px;
+    column-gap: 30px;
     margin: 0 0 30px;
+    max-width: 100%;
   }
 
   .nav-menu__item {

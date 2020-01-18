@@ -168,11 +168,11 @@
 
     &:first-child {
       padding: 0;
-      margin: 0 0 26px;
+      margin: 0 0 39px;
     }
 
     &:nth-child(2n) {
-      padding-bottom: 0;
+      padding: 0;
       margin: 0 0 44px;
     }
 
@@ -182,6 +182,7 @@
     }
 
     &:nth-child(4n) {
+      margin: 16px 0 0;
       padding-top: 0;
     }
   }
@@ -217,6 +218,10 @@
   }
 
   .benefits-item_background-color_dark-blue {
-    margin-bottom: 31px;
+    margin: 0 0 43px;
+  }
+
+  .benefits-item__desc {
+    line-height: 150%;
   }
 }

@@ -20,13 +20,13 @@
 
 @media (max-width: $tablet-breakpoint) {
   .bottomline__wrap {
-    padding: 45px 45px 41px;
+    padding: 45px;
   }
 }
 
 @media (max-width: $phone-breakpoint) {
   .bottomline__wrap {
-    padding: 45px 0 46px;
+    padding: 48px 15px 47px;
   }
 
   .bottomline__logo {
@@ -37,7 +37,7 @@
     display: block;
   }
 
-  .bottomline__socials {
-    width: 50%;
+  .bottomline__nav-menu {
+    width: 100%;
   }
 }

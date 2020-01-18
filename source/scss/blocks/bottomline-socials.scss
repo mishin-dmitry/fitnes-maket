@@ -58,6 +58,11 @@
 }
 
 @media (max-width: $phone-breakpoint) {
+
+  .bottomline-socials__icon {
+    height: 27px;
+  }
+
   .bottomline-socials__icon_type_vkontakte {
     width: 32px;
   }
@@ -71,5 +76,9 @@
     width: 14px;
     height: 27px;
     margin: -2px 2px 0 0;
+  }
+
+  .bottomline-socials__icon:not(:last-child) {
+    margin-right: 35px;
   }
 }

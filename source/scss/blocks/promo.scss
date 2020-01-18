@@ -73,7 +73,7 @@
 
 @media (max-width: $phone-breakpoint) {
   .promo__wrap {
-    padding-top: 66px;
+    padding: 66px 15px 0;
   }
 
   .promo__title {
@@ -81,9 +81,20 @@
     line-height: $line-height_phone;
   }
 
+  .promo__left-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .promo__photo {
+    height: 299px;
+    min-width: 290px;
+  }
+
   .promo__right-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: 290px;
   }
 }

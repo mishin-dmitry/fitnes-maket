@@ -80,7 +80,7 @@
   }
 
   .aside__text-container {
-    padding: 45px 45px 51px 45px;
+    padding: 45px 44px 51px;
   }
 
   .aside__title {
@@ -96,7 +96,7 @@
   }
 
   .aside__button {
-    padding: 12px 52px;
+    padding: 12px 51px;
     margin: 30px 0 0 -1px;
     font-size: 10px;
     line-height: 12px;
@@ -110,6 +110,21 @@
 
 @media (max-width: $phone-breakpoint) {
   .aside__wrap {
-    padding: 70px 0 68px;
+    padding: 70px 15px 68px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside__text-container {
+    max-width: 386px;
+    width: 100%;
+  }
+  
+  .aside__photo {
+    max-width: 386px;
+    width: 100%;
+    height: 292px;
+    background-size: cover;
+    background-position: center;
   }
 }

@@ -1,15 +1,13 @@
 .abonements {
-  background-color: $grey;
-  background-image: url("../img/blin@1x.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  position: relative;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .abonements {
-    background-image: url("../img/blin@2x.png");
-    background-size: 321px auto;
-  }
+.abonements img {
+  position: absolute;
+  right: -8%;
+  bottom: -17%;
+  width: 396px;
+  height: 485px;
 }
 
 .abonements__item {
@@ -82,6 +80,13 @@
 }
 
 @media (max-width: $tablet-breakpoint) {
+  .abonements img {
+    right: 0;
+    bottom: -7%;
+    width: auto;
+    height: auto;
+  }
+
   .abonements__wrap {
     padding: 96px 0 102px;
   }
@@ -114,8 +119,12 @@
 }
 
 @media (max-width: $phone-breakpoint) {
+  .abonements img {
+    display: none;
+  }
+
   .abonements__wrap {
-    padding: 66px 0 35px;
+    padding: 66px 15px 35px;
   }
 
   .abonements__title {
@@ -126,14 +135,19 @@
 
   .abonements__list {
     margin-bottom: 34px;
+    max-width: 290px;
   }
 
   .abonements__item {
     font-size: 16px;
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
 
   .abonements__types-item {
-    width: 100%;
+    width: 290px;
     margin: 0 0 35px;
   }
 }

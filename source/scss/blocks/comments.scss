@@ -51,7 +51,8 @@
 
 @media (max-width: $phone-breakpoint) {
   .comments__wrap {
-    margin: 67px auto 69px;
+    margin: 67px auto 71px;
+    padding: 0 47px;
   }
 
   .comments__title {
@@ -64,7 +65,7 @@
   }
 
   .comments__item {
-    width: 226px;
+    max-width: 226px;
     text-align: center;
     padding: 48px 25px 35px;
   }

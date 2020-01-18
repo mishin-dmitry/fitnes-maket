@@ -20,3 +20,17 @@
     border-top: none;
   }
 }
+
+@media (max-width: $phone-breakpoint) {
+  .footer__wrap {
+    padding: 0 15px;
+    justify-content: start;
+  }
+
+  .footer__container_theme_gradient {
+    background: linear-gradient(to bottom,#102654 43%,#fff 43%);;
+    border-top: none;
+  }
+}
+
+

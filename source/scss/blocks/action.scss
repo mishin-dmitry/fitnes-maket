@@ -85,4 +85,14 @@
   .action:first-child .action__desc {
     margin-bottom: 23px;
   }
+
+  .action__link {
+    bottom: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .action:last-child p {
+    white-space: pre-wrap;
+  }
 }
