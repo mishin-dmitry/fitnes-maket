@@ -61,10 +61,11 @@
 .aside__photo {
   width: 100%;
   max-width: 660px;
-  background-color: $white;
+  background-color: $text-color_dark;
   background-image: url("../img/man-aside@1x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -119,7 +120,7 @@
     max-width: 386px;
     width: 100%;
   }
-  
+
   .aside__photo {
     max-width: 386px;
     width: 100%;
