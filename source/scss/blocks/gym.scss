@@ -13,8 +13,8 @@
   width: 364px;
   height: 228px;
   text-align: center;
-  background-color: rgba(20,54,122,.5);
-  background-image:  url("../img/gym-small-photo@1x.jpg");
+  background-color: rgba(20, 54, 122, 0.5);
+  background-image: url("../img/gym-small-photo@1x.jpg");
   box-sizing: border-box;
 }
 
@@ -103,7 +103,7 @@
 
 @media (max-width: $tablet-breakpoint) {
   .gym__wrap {
-    padding: 96px 0 170px;
+    padding: 98px 0 170px;
   }
 
   .gym__text-container {
@@ -136,7 +136,7 @@
     margin: auto;
   }
 
-  .gym__photo img{
+  .gym__photo img {
     width: 678px;
     height: 345px;
   }
