@@ -379,9 +379,9 @@
               <h2 class="form-container__title">Бесплатное занятие</h2>
              <form action="#" class="footer__form form">
                 <label for="name" class="visually-hidden">Ваше имя</label>
-                <input type="text" placeholder="Имя" id="name">
+                <input type="text" placeholder="Имя" id="name" required>
                 <label for="phone" class="visually-hidden">Ваш номер телефона</label>
-                <input type="tel" placeholder="Телефон" id="phone">
+                <input type="tel" placeholder="Телефон" id="phone" required pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" minlength="16" maxlength="16">
                 <button type="submit">Отправить</button>
               </form>
             </div>

@@ -64,7 +64,7 @@
 }
 
 .benefits-item__left-container {
-  margin-right: 31px;
+  margin-right: 28px; /* Если ставить больше, то ломается в Edge */
 }
 
 .benefits-item__desc {

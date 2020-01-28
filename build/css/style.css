@@ -81,10 +81,6 @@
   .coaches__list .slick-slide {
     margin-right: 30px; } }
 
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
-
 /* Icons */
 @font-face {
   font-family: "slick";
@@ -195,13 +191,13 @@
       opacity: 0.75; }
 
 @media (max-width: 1270px) {
-  .slick-next {
+  .coaches .slick-next {
     right: -18px; }
-    .slick-next:hover {
+    .coaches .slick-next:hover {
       right: -60px; }
-  .slick-prev {
+  .coaches .slick-prev {
     left: -18px; }
-    .slick-prev:hover {
+    .coaches .slick-prev:hover {
       left: -21px; } }
 
 @media (max-width: 1199px) {
@@ -523,7 +519,8 @@ html {
   color: rgba(16, 38, 84, 0.5);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  cursor: pointer; }
+  cursor: pointer;
+  border-bottom: 2px solid rgba(120, 120, 120, 0); }
   .abonements__item:hover {
     color: #102654;
     -webkit-transition: 0.5s;
@@ -815,6 +812,12 @@ html {
 .inner-block_hidden_yes {
   display: none; }
 
+@media (max-width: 767px) {
+  .inner-block__title {
+    margin: 44px 0 0; }
+  .inner-block__list {
+    padding: 0 31px 0 50px; } }
+
 .next {
   position: absolute;
   right: -62px;
@@ -1007,7 +1010,8 @@ html {
   margin-top: -4px; }
 
 .benefits-item__left-container {
-  margin-right: 31px; }
+  margin-right: 28px;
+  /* Если ставить больше, то ломается в Edge */ }
 
 .benefits-item__desc {
   margin: 0;
@@ -1835,7 +1839,10 @@ html {
   border-bottom: 1px solid #74819c;
   outline: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
   .form input:nth-of-type(2n + 1) {
     margin-right: 25px; }
   .form input::-webkit-input-placeholder {
@@ -1911,6 +1918,10 @@ html {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       color: transparent; }
+  .form input:valid:not(:placeholder-shown) {
+    border-color: green; }
+  .form input:invalid:not(:placeholder-shown) {
+    border-color: red; }
 
 @media (max-width: 1199px) {
   .form input {

@@ -34,6 +34,9 @@
   border-bottom: 1px solid #74819c;
   outline: 0;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   &:nth-of-type(2n + 1) {
     margin-right: 25px;
@@ -64,6 +67,14 @@
       transition: $transition;
       color: transparent;
     }
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: red;
   }
 }
 

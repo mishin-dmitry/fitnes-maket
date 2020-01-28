@@ -1,6 +1,10 @@
+$(document).ready(function() {
+  $("#phone").mask("+7(999)999-99-99");
+});
+
 $(".coaches__list").slick({
   dots: false,
-  infinite: true,
+  infinite: false,
   speed: 300,
   variableWidth: true,
   slidesToShow: 4,
@@ -25,9 +29,10 @@ $(".coaches__list").slick({
 
 $(".comments__list").slick({
   dots: false,
-  infinite: true,
+  infinite: false,
   speed: 300,
   variableWidth: true,
+  adaptiveHeight: true,
   slidesToShow: 1
 });
 

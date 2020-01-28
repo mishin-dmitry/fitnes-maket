@@ -37,14 +37,6 @@ $slick-opacity-not-active: 0.25 !default;
   }
 }
 
-/* Slider */
-
-.slick-list {
-  .slick-loading & {
-    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
-  }
-}
-
 /* Icons */
 @if $slick-font-family == "slick" {
   @font-face {
@@ -176,7 +168,7 @@ $slick-opacity-not-active: 0.25 !default;
   }
 }
 @media (max-width: 1270px) {
-  .slick-next {
+  .coaches .slick-next {
     right: -18px;
 
     &:hover {
@@ -184,7 +176,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
   }
 
-  .slick-prev {
+  .coaches .slick-prev {
     left: -18px;
 
     &:hover {

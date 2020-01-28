@@ -39,3 +39,13 @@
 .inner-block_hidden_yes {
   display: none;
 }
+
+@media (max-width: $phone-breakpoint) {
+  .inner-block__title {
+    margin: 44px 0 0;
+  }
+
+  .inner-block__list {
+    padding: 0 31px 0 50px;
+  }
+}

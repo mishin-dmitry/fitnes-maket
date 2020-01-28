@@ -20,6 +20,7 @@
   color: rgba(16, 38, 84, 0.5);
   transition: $transition;
   cursor: pointer;
+  border-bottom: 2px solid rgba(120, 120, 120, 0);
 
   &:hover {
     color: $text-color_dark;
