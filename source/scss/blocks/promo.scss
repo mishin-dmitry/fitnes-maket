@@ -10,7 +10,8 @@
   background-color: #ed0233;
   background-image: url("../img/girl-promo@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 101%;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -62,6 +63,7 @@
   .promo__right-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -89,6 +91,8 @@
   .promo__photo {
     height: 299px;
     min-width: 290px;
+    width: 100%;
+    background-position: top;
   }
 
   .promo__right-container {

@@ -1,5 +1,6 @@
 .benefits-item {
   width: 340px;
+  flex-wrap: nowrap;
   box-sizing: border-box;
 
   &:first-child {
@@ -29,8 +30,8 @@
 .benefits-item_background-color_dark-blue {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: 238px;
+  top: 53%;
+  transform: translate(-50%, -50%);
   width: 240px;
   background-color: $text-color_light;
 }
@@ -101,10 +102,11 @@
     }
 
     &:nth-child(2n) {
-      padding: 0 0 0 12px;
+      padding: 0;
       margin-left: 0;
       border-bottom: none;
       order: -2;
+      justify-content: flex-end;
     }
 
     &:nth-child(3n) {
@@ -165,6 +167,7 @@
 @media (max-width: $phone-breakpoint) {
   .benefits-item {
     width: 100%;
+    flex-wrap: wrap;
 
     &:first-child {
       padding: 0;

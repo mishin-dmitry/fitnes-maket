@@ -34,9 +34,6 @@
   border-bottom: 1px solid #74819c;
   outline: 0;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 
   &:nth-of-type(2n + 1) {
     margin-right: 25px;
@@ -77,6 +74,10 @@
     border-color: red;
   }
 }
+
+form input[type=text],form input[type=tel] {
+	-webkit-appearance: none;
+} 
 
 @media (max-width: $tablet-breakpoint) {
   .form input {

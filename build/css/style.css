@@ -194,7 +194,7 @@
   .coaches .slick-next {
     right: -18px; }
     .coaches .slick-next:hover {
-      right: -60px; }
+      right: -21px; }
   .coaches .slick-prev {
     left: -18px; }
     .coaches .slick-prev:hover {
@@ -360,13 +360,15 @@ html {
 
 .header__list {
   position: absolute;
-  bottom: 188px;
+  top: 55%;
   left: 20px;
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
 .header__item {
+  word-break: break-all;
+  width: 113px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -569,17 +571,16 @@ html {
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  list-style-type: none; }
 
 .abonements__types-item {
-  margin: 39px 0 0;
+  margin: 39px 40px 0 0;
   width: 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff; }
+  .abonements__types-item:nth-child(3n) {
+    margin: 39px 0 0; }
 
 .abonements__wrap {
   position: relative;
@@ -930,7 +931,7 @@ html {
   position: relative;
   max-width: 1040px;
   margin: auto;
-  padding: 116px 0 116px; }
+  padding: 113px 0 116px; }
 
 .benefits__title {
   margin: 0 0 48px;
@@ -941,6 +942,7 @@ html {
   text-align: center; }
 
 .benefits__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none; }
@@ -966,6 +968,8 @@ html {
 
 .benefits-item {
   width: 340px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .benefits-item:first-child {
@@ -987,9 +991,9 @@ html {
 .benefits-item_background-color_dark-blue {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 238px;
+  top: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 240px;
   background-color: #1c3374; }
 
@@ -1051,12 +1055,15 @@ html {
           -ms-flex-order: -3;
               order: -3; }
     .benefits-item:nth-child(2n) {
-      padding: 0 0 0 12px;
+      padding: 0;
       margin-left: 0;
       border-bottom: none;
       -webkit-box-ordinal-group: -1;
           -ms-flex-order: -2;
-              order: -2; }
+              order: -2;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
     .benefits-item:nth-child(3n) {
       padding: 47px 4px 0;
       margin-right: 0; }
@@ -1098,7 +1105,9 @@ html {
 
 @media (max-width: 767px) {
   .benefits-item {
-    width: 100%; }
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .benefits-item:first-child {
       padding: 0;
       margin: 0 0 39px; }
@@ -1198,7 +1207,7 @@ html {
   -o-border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
      border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1; }
-  .action:first-child {
+  .action:not(:last-child) {
     margin-bottom: 40px; }
   .action:last-child p {
     white-space: nowrap; }
@@ -1239,9 +1248,8 @@ html {
     min-height: 211px;
     padding: 18px 56px 29px 28px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-    .action:first-child {
-      margin-bottom: 0; }
+            box-sizing: border-box;
+    margin-bottom: 40px; }
   .action__link {
     margin-top: 0;
     position: absolute;
@@ -1332,7 +1340,7 @@ html {
 
 .contacts {
   background-color: #ffffff;
-  margin: 64px 58px 0 0;
+  margin: 64px 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -1374,6 +1382,7 @@ html {
 
 .contacts__desc {
   margin: 0;
+  width: 170px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px; }
@@ -1631,7 +1640,7 @@ html {
 
 .coaches__wrap {
   position: relative;
-  margin: 7px auto 117px;
+  margin: 5px auto 117px;
   max-width: 1160px; }
 
 .coaches__title {
@@ -1679,7 +1688,7 @@ html {
 .comments__wrap {
   position: relative;
   max-width: 560px;
-  margin: 114px auto 123px; }
+  margin: 114px auto 119px; }
 
 .comments__title {
   margin: 0 0 58px;
@@ -1698,6 +1707,7 @@ html {
 .comments__item {
   position: relative;
   width: 560px;
+  min-height: 242px;
   padding: 62px 62px 57px 170px;
   background-color: #1c3374;
   -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
@@ -1847,10 +1857,7 @@ html {
   border-bottom: 1px solid #74819c;
   outline: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
+          box-sizing: border-box; }
   .form input:nth-of-type(2n + 1) {
     margin-right: 25px; }
   .form input::-webkit-input-placeholder {
@@ -1930,6 +1937,9 @@ html {
     border-color: green; }
   .form input:invalid:not(:placeholder-shown) {
     border-color: red; }
+
+form input[type=text], form input[type=tel] {
+  -webkit-appearance: none; }
 
 @media (max-width: 1199px) {
   .form input {
@@ -2132,7 +2142,6 @@ html {
 
 .nav-menu__list {
   margin: 0 0 0 -19px;
-  max-width: 475px;
   padding: 3px 0 0; }
 
 .nav-menu__link {
@@ -2188,7 +2197,8 @@ html {
   background-color: #ed0233;
   background-image: url("../img/girl-promo@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 101%; }
+  background-size: cover;
+  background-position: center; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .promo__photo {
@@ -2235,6 +2245,8 @@ html {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%; }
   .promo__photo {
     background-image: url("../img/girl-promo_tablet@1x.jpg");
@@ -2254,7 +2266,9 @@ html {
             justify-content: center; }
   .promo__photo {
     height: 299px;
-    min-width: 290px; }
+    min-width: 290px;
+    width: 100%;
+    background-position: top; }
   .promo__right-container {
     display: -webkit-box;
     display: -ms-flexbox;

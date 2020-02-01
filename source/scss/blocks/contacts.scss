@@ -1,6 +1,6 @@
 .contacts {
   background-color: $white;
-  margin: 64px 58px 0 0;
+  margin: 64px 0 0;
   box-sizing: border-box;
 }
 
@@ -45,6 +45,7 @@
 
 .contacts__desc {
   margin: 0;
+  width: 170px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;

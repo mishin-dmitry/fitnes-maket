@@ -63,14 +63,17 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  justify-content: space-between;
 }
 
 .abonements__types-item {
-  margin: 39px 0 0;
+  margin: 39px 40px 0 0;
   width: 360px;
   box-sizing: border-box;
   background-color: $white;
+
+  &:nth-child(3n) {
+    margin: 39px 0 0;
+  }
 }
 
 .abonements__wrap {

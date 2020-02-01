@@ -63,7 +63,7 @@
 
 .header__list {
   position: absolute;
-  bottom: 188px;
+  top: 55%;
   left: 20px;
   margin: 0;
   padding: 0;
@@ -71,6 +71,8 @@
 }
 
 .header__item {
+  word-break: break-all;
+  width: 113px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
