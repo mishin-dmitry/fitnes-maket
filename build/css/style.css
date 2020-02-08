@@ -1938,8 +1938,11 @@ html {
   .form input:invalid:not(:placeholder-shown) {
     border-color: red; }
 
-form input[type=text], form input[type=tel] {
-  -webkit-appearance: none; }
+form input {
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 0px; }
 
 @media (max-width: 1199px) {
   .form input {
